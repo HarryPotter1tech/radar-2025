@@ -1,0 +1,70 @@
+--- Log File Created: 2026-03-18 11:14:33.342 ---
+[2026-03-18 11:14:33.511]<DEBUG> [Detector]Robot Inferencer initializing...
+[2026-03-18 11:14:33.512]<DEBUG> [Yolov8Inferencer]Model loaded: car_v8n
+[2026-03-18 11:14:33.512]<DEBUG> [Yolov8Inferencer]Model class count: 1
+[2026-03-18 11:14:33.512]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:14:33.512]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:14:33.512]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:14:33.512]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:14:33.512]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:14:33.512]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:14:33.512]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:14:33.512]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:14:33.512]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:14:33.512]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:14:33.512]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:14:33.513]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:14:33.513]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:14:33.513]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:14:33.513]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:14:33.513]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:14:33.513]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:14:33.513]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:14:33.513]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:14:33.513]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:14:33.513]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:14:33.513]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:14:33.513]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:14:33.513]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:14:33.513]<DEBUG> [Detector]initialized.
+[2026-03-18 11:14:53.290]<DEBUG> [WebCameraHandler]Camera devices scanned: 5 devices found.
+[2026-03-18 11:14:53.291]<DEBUG> [WebCameraHandler]--- Camera device 0: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video0)
+[2026-03-18 11:14:53.291]<DEBUG> [WebCameraHandler]--- Camera device 1: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video1)
+[2026-03-18 11:14:53.291]<DEBUG> [WebCameraHandler]--- Camera device 2: UGREEN 95348: UGREEN 95348 (/dev/video2)
+[2026-03-18 11:14:53.291]<DEBUG> [WebCameraHandler]--- Camera device 3: UGREEN 95348: UGREEN 95348 (/dev/video3)
+[2026-03-18 11:14:53.291]<DEBUG> [WebCameraHandler]--- Camera device 4: VirtualCamera (/dev/video4)
+[2026-03-18 11:14:54.257]<DEBUG> [WebCameraHandler]VirtualCamera (/dev/video4) opened successfully.
+[2026-03-18 11:18:00.382]<DEBUG> [Detector]Robot Inferencer initializing...
+[2026-03-18 11:18:00.382]<DEBUG> [Detector]initialized.
+[2026-03-18 11:18:00.382]<DEBUG> [Detector]Detection started.
+[2026-03-18 11:19:33.457]<DEBUG> [Detector]Detection stopped.
+[2026-03-18 11:23:41.173]<DEBUG> [WebCameraHandler]VirtualCamera (/dev/video4) opened successfully.
+[2026-03-18 11:23:53.957]<DEBUG> [Detector]Robot Inferencer initializing...
+[2026-03-18 11:23:53.957]<DEBUG> [Yolov8Inferencer]Model loaded: car_v8n
+[2026-03-18 11:23:53.957]<DEBUG> [Yolov8Inferencer]Model class count: 1
+[2026-03-18 11:23:53.957]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:23:53.957]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:23:53.957]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:23:53.957]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:23:53.957]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:23:53.958]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:23:53.958]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:23:53.958]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:23:53.958]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:23:53.958]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:23:53.958]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:23:53.958]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:23:53.958]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:23:53.958]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:23:53.958]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:23:53.958]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:23:53.958]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:23:53.958]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:23:53.958]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:23:53.958]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:23:53.958]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:23:53.958]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:23:53.958]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-18 11:23:53.958]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-18 11:23:53.959]<DEBUG> [Detector]initialized.
+[2026-03-18 11:23:53.959]<DEBUG> [Detector]Detection started.

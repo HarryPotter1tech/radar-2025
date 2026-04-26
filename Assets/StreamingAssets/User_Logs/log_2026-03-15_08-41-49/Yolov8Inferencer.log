@@ -1,0 +1,27 @@
+---Yolov8Inferencer Log File Created: 2026-03-15 08:41:49.212 ---
+[2026-03-15 08:41:49.212]<DEBUG> [Yolov8Inferencer]Model loaded: car_v8n
+[2026-03-15 08:41:49.212]<DEBUG> [Yolov8Inferencer]Model class count: 1
+[2026-03-15 08:41:49.212]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 08:41:49.212]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 08:41:49.213]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 08:41:49.214]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 08:41:49.214]<DEBUG> [Yolov8Inferencer]Model class count: 12

@@ -1,0 +1,6 @@
+---WebCameraHandler Log File Created: 2026-03-06 12:01:37.914 ---
+[2026-03-06 12:01:37.912]<DEBUG> [WebCameraHandler]Camera devices scanned: 2 devices found.
+[2026-03-06 12:01:37.922]<DEBUG> [WebCameraHandler]--- Camera device 0: USB2.0 FHD UVC WebCam
+[2026-03-06 12:01:37.926]<DEBUG> [WebCameraHandler]--- Camera device 1: EOS Webcam Utility
+[2026-03-06 12:01:40.040]<DEBUG> [WebCameraHandler]USB2.0 FHD UVC WebCam opened successfully.
+[2026-03-06 12:01:49.009]<DEBUG> [WebCameraHandler]EOS Webcam Utility opened successfully.

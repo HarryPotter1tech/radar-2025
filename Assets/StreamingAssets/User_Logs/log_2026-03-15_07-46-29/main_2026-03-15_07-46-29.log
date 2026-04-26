@@ -1,0 +1,178 @@
+--- Log File Created: 2026-03-15 07:46:29.161 ---
+[2026-03-15 07:46:29.336]<DEBUG> [Detector]Robot Inferencer initializing...
+[2026-03-15 07:46:29.337]<DEBUG> [Yolov8Inferencer]Model loaded: car_v8n
+[2026-03-15 07:46:29.337]<DEBUG> [Yolov8Inferencer]Model class count: 1
+[2026-03-15 07:46:29.337]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:46:29.337]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:46:29.337]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:46:29.337]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:46:29.338]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:46:29.338]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:46:29.338]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:46:29.338]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:46:29.338]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:46:29.338]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:46:29.338]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:46:29.338]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:46:29.338]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:46:29.338]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:46:29.338]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:46:29.338]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:46:29.338]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:46:29.338]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:46:29.338]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:46:29.338]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:46:29.338]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:46:29.338]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:46:29.338]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:46:29.339]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:46:29.339]<DEBUG> [Detector]initialized.
+[2026-03-15 07:46:38.712]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:46:39.994]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:46:42.110]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:46:42.965]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:46:43.797]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:46:44.334]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:46:44.859]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:46:45.281]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:47:01.513]<DEBUG> [SerialHandler]Serial port closed.
+[2026-03-15 07:47:01.514]<ERROR> [SerialHandler]Failed to open serial port: System.IO.IOException: 权限不够
+  at System.IO.Ports.SerialPortStream.ThrowIOException () [0x0000f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at System.IO.Ports.SerialPortStream..ctor (System.String portName, System.Int32 baudRate, System.Int32 dataBits, System.IO.Ports.Parity parity, System.IO.Ports.StopBits stopBits, System.Boolean dtrEnable, System.Boolean rtsEnable, System.IO.Ports.Handshake handshake, System.Int32 readTimeout, System.Int32 writeTimeout, System.Int32 readBufferSize, System.Int32 writeBufferSize) [0x0001b] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPortStream..ctor(string,int,int,System.IO.Ports.Parity,System.IO.Ports.StopBits,bool,bool,System.IO.Ports.Handshake,int,int,int,int)
+  at System.IO.Ports.SerialPort.Open () [0x0006f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPort.Open()
+  at radar.serial.SerialHandler.ConnectToPort (System.IO.Ports.SerialPort& sp, System.String portName, System.Int32 baudRate, System.IO.Ports.Parity parity, System.Int32 dataBits, System.IO.Ports.StopBits stopBits) [0x00018] in /home/harryh/RADAR/RADAR/Assets/Scripts/radar/Serial/SerialHandler.cs:80 
+[2026-03-15 07:47:02.164]<DEBUG> [SerialHandler]Serial port closed.
+[2026-03-15 07:47:02.807]<DEBUG> [SerialHandler]Serial port closed.
+[2026-03-15 07:47:03.451]<DEBUG> [SerialHandler]Serial port closed.
+[2026-03-15 07:47:10.131]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:47:20.893]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:47:22.268]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:47:23.008]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:47:55.074]<DEBUG> [SerialHandler]Serial port closed.
+[2026-03-15 07:47:55.074]<ERROR> [SerialHandler]Failed to open serial port: System.IO.IOException: 权限不够
+  at System.IO.Ports.SerialPortStream.ThrowIOException () [0x0000f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at System.IO.Ports.SerialPortStream..ctor (System.String portName, System.Int32 baudRate, System.Int32 dataBits, System.IO.Ports.Parity parity, System.IO.Ports.StopBits stopBits, System.Boolean dtrEnable, System.Boolean rtsEnable, System.IO.Ports.Handshake handshake, System.Int32 readTimeout, System.Int32 writeTimeout, System.Int32 readBufferSize, System.Int32 writeBufferSize) [0x0001b] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPortStream..ctor(string,int,int,System.IO.Ports.Parity,System.IO.Ports.StopBits,bool,bool,System.IO.Ports.Handshake,int,int,int,int)
+  at System.IO.Ports.SerialPort.Open () [0x0006f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPort.Open()
+  at radar.serial.SerialHandler.ConnectToPort (System.IO.Ports.SerialPort& sp, System.String portName, System.Int32 baudRate, System.IO.Ports.Parity parity, System.Int32 dataBits, System.IO.Ports.StopBits stopBits) [0x00018] in /home/harryh/RADAR/RADAR/Assets/Scripts/radar/Serial/SerialHandler.cs:80 
+[2026-03-15 07:47:55.503]<DEBUG> [SerialHandler]Serial port closed.
+[2026-03-15 07:47:55.504]<ERROR> [SerialHandler]Failed to open serial port: System.IO.IOException: 权限不够
+  at System.IO.Ports.SerialPortStream.ThrowIOException () [0x0000f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at System.IO.Ports.SerialPortStream..ctor (System.String portName, System.Int32 baudRate, System.Int32 dataBits, System.IO.Ports.Parity parity, System.IO.Ports.StopBits stopBits, System.Boolean dtrEnable, System.Boolean rtsEnable, System.IO.Ports.Handshake handshake, System.Int32 readTimeout, System.Int32 writeTimeout, System.Int32 readBufferSize, System.Int32 writeBufferSize) [0x0001b] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPortStream..ctor(string,int,int,System.IO.Ports.Parity,System.IO.Ports.StopBits,bool,bool,System.IO.Ports.Handshake,int,int,int,int)
+  at System.IO.Ports.SerialPort.Open () [0x0006f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPort.Open()
+  at radar.serial.SerialHandler.ConnectToPort (System.IO.Ports.SerialPort& sp, System.String portName, System.Int32 baudRate, System.IO.Ports.Parity parity, System.Int32 dataBits, System.IO.Ports.StopBits stopBits) [0x00018] in /home/harryh/RADAR/RADAR/Assets/Scripts/radar/Serial/SerialHandler.cs:80 
+[2026-03-15 07:47:56.089]<DEBUG> [SerialHandler]Serial port closed.
+[2026-03-15 07:47:56.089]<ERROR> [SerialHandler]Failed to open serial port: System.IO.IOException: 权限不够
+  at System.IO.Ports.SerialPortStream.ThrowIOException () [0x0000f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at System.IO.Ports.SerialPortStream..ctor (System.String portName, System.Int32 baudRate, System.Int32 dataBits, System.IO.Ports.Parity parity, System.IO.Ports.StopBits stopBits, System.Boolean dtrEnable, System.Boolean rtsEnable, System.IO.Ports.Handshake handshake, System.Int32 readTimeout, System.Int32 writeTimeout, System.Int32 readBufferSize, System.Int32 writeBufferSize) [0x0001b] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPortStream..ctor(string,int,int,System.IO.Ports.Parity,System.IO.Ports.StopBits,bool,bool,System.IO.Ports.Handshake,int,int,int,int)
+  at System.IO.Ports.SerialPort.Open () [0x0006f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPort.Open()
+  at radar.serial.SerialHandler.ConnectToPort (System.IO.Ports.SerialPort& sp, System.String portName, System.Int32 baudRate, System.IO.Ports.Parity parity, System.Int32 dataBits, System.IO.Ports.StopBits stopBits) [0x00018] in /home/harryh/RADAR/RADAR/Assets/Scripts/radar/Serial/SerialHandler.cs:80 
+[2026-03-15 07:47:56.520]<DEBUG> [SerialHandler]Serial port closed.
+[2026-03-15 07:47:56.521]<ERROR> [SerialHandler]Failed to open serial port: System.IO.IOException: 权限不够
+  at System.IO.Ports.SerialPortStream.ThrowIOException () [0x0000f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at System.IO.Ports.SerialPortStream..ctor (System.String portName, System.Int32 baudRate, System.Int32 dataBits, System.IO.Ports.Parity parity, System.IO.Ports.StopBits stopBits, System.Boolean dtrEnable, System.Boolean rtsEnable, System.IO.Ports.Handshake handshake, System.Int32 readTimeout, System.Int32 writeTimeout, System.Int32 readBufferSize, System.Int32 writeBufferSize) [0x0001b] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPortStream..ctor(string,int,int,System.IO.Ports.Parity,System.IO.Ports.StopBits,bool,bool,System.IO.Ports.Handshake,int,int,int,int)
+  at System.IO.Ports.SerialPort.Open () [0x0006f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPort.Open()
+  at radar.serial.SerialHandler.ConnectToPort (System.IO.Ports.SerialPort& sp, System.String portName, System.Int32 baudRate, System.IO.Ports.Parity parity, System.Int32 dataBits, System.IO.Ports.StopBits stopBits) [0x00018] in /home/harryh/RADAR/RADAR/Assets/Scripts/radar/Serial/SerialHandler.cs:80 
+[2026-03-15 07:47:56.957]<DEBUG> [SerialHandler]Serial port closed.
+[2026-03-15 07:47:56.957]<ERROR> [SerialHandler]Failed to open serial port: System.IO.IOException: 权限不够
+  at System.IO.Ports.SerialPortStream.ThrowIOException () [0x0000f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at System.IO.Ports.SerialPortStream..ctor (System.String portName, System.Int32 baudRate, System.Int32 dataBits, System.IO.Ports.Parity parity, System.IO.Ports.StopBits stopBits, System.Boolean dtrEnable, System.Boolean rtsEnable, System.IO.Ports.Handshake handshake, System.Int32 readTimeout, System.Int32 writeTimeout, System.Int32 readBufferSize, System.Int32 writeBufferSize) [0x0001b] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPortStream..ctor(string,int,int,System.IO.Ports.Parity,System.IO.Ports.StopBits,bool,bool,System.IO.Ports.Handshake,int,int,int,int)
+  at System.IO.Ports.SerialPort.Open () [0x0006f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPort.Open()
+  at radar.serial.SerialHandler.ConnectToPort (System.IO.Ports.SerialPort& sp, System.String portName, System.Int32 baudRate, System.IO.Ports.Parity parity, System.Int32 dataBits, System.IO.Ports.StopBits stopBits) [0x00018] in /home/harryh/RADAR/RADAR/Assets/Scripts/radar/Serial/SerialHandler.cs:80 
+[2026-03-15 07:47:57.399]<DEBUG> [SerialHandler]Serial port closed.
+[2026-03-15 07:47:57.399]<ERROR> [SerialHandler]Failed to open serial port: System.IO.IOException: 权限不够
+  at System.IO.Ports.SerialPortStream.ThrowIOException () [0x0000f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at System.IO.Ports.SerialPortStream..ctor (System.String portName, System.Int32 baudRate, System.Int32 dataBits, System.IO.Ports.Parity parity, System.IO.Ports.StopBits stopBits, System.Boolean dtrEnable, System.Boolean rtsEnable, System.IO.Ports.Handshake handshake, System.Int32 readTimeout, System.Int32 writeTimeout, System.Int32 readBufferSize, System.Int32 writeBufferSize) [0x0001b] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPortStream..ctor(string,int,int,System.IO.Ports.Parity,System.IO.Ports.StopBits,bool,bool,System.IO.Ports.Handshake,int,int,int,int)
+  at System.IO.Ports.SerialPort.Open () [0x0006f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPort.Open()
+  at radar.serial.SerialHandler.ConnectToPort (System.IO.Ports.SerialPort& sp, System.String portName, System.Int32 baudRate, System.IO.Ports.Parity parity, System.Int32 dataBits, System.IO.Ports.StopBits stopBits) [0x00018] in /home/harryh/RADAR/RADAR/Assets/Scripts/radar/Serial/SerialHandler.cs:80 
+[2026-03-15 07:47:57.692]<DEBUG> [SerialHandler]Serial port closed.
+[2026-03-15 07:47:57.692]<ERROR> [SerialHandler]Failed to open serial port: System.IO.IOException: 权限不够
+  at System.IO.Ports.SerialPortStream.ThrowIOException () [0x0000f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at System.IO.Ports.SerialPortStream..ctor (System.String portName, System.Int32 baudRate, System.Int32 dataBits, System.IO.Ports.Parity parity, System.IO.Ports.StopBits stopBits, System.Boolean dtrEnable, System.Boolean rtsEnable, System.IO.Ports.Handshake handshake, System.Int32 readTimeout, System.Int32 writeTimeout, System.Int32 readBufferSize, System.Int32 writeBufferSize) [0x0001b] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPortStream..ctor(string,int,int,System.IO.Ports.Parity,System.IO.Ports.StopBits,bool,bool,System.IO.Ports.Handshake,int,int,int,int)
+  at System.IO.Ports.SerialPort.Open () [0x0006f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPort.Open()
+  at radar.serial.SerialHandler.ConnectToPort (System.IO.Ports.SerialPort& sp, System.String portName, System.Int32 baudRate, System.IO.Ports.Parity parity, System.Int32 dataBits, System.IO.Ports.StopBits stopBits) [0x00018] in /home/harryh/RADAR/RADAR/Assets/Scripts/radar/Serial/SerialHandler.cs:80 
+[2026-03-15 07:47:58.274]<DEBUG> [SerialHandler]Serial port closed.
+[2026-03-15 07:47:58.274]<ERROR> [SerialHandler]Failed to open serial port: System.IO.IOException: 权限不够
+  at System.IO.Ports.SerialPortStream.ThrowIOException () [0x0000f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at System.IO.Ports.SerialPortStream..ctor (System.String portName, System.Int32 baudRate, System.Int32 dataBits, System.IO.Ports.Parity parity, System.IO.Ports.StopBits stopBits, System.Boolean dtrEnable, System.Boolean rtsEnable, System.IO.Ports.Handshake handshake, System.Int32 readTimeout, System.Int32 writeTimeout, System.Int32 readBufferSize, System.Int32 writeBufferSize) [0x0001b] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPortStream..ctor(string,int,int,System.IO.Ports.Parity,System.IO.Ports.StopBits,bool,bool,System.IO.Ports.Handshake,int,int,int,int)
+  at System.IO.Ports.SerialPort.Open () [0x0006f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPort.Open()
+  at radar.serial.SerialHandler.ConnectToPort (System.IO.Ports.SerialPort& sp, System.String portName, System.Int32 baudRate, System.IO.Ports.Parity parity, System.Int32 dataBits, System.IO.Ports.StopBits stopBits) [0x00018] in /home/harryh/RADAR/RADAR/Assets/Scripts/radar/Serial/SerialHandler.cs:80 
+[2026-03-15 07:47:58.858]<DEBUG> [SerialHandler]Serial port closed.
+[2026-03-15 07:47:58.858]<ERROR> [SerialHandler]Failed to open serial port: System.IO.IOException: 权限不够
+  at System.IO.Ports.SerialPortStream.ThrowIOException () [0x0000f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at System.IO.Ports.SerialPortStream..ctor (System.String portName, System.Int32 baudRate, System.Int32 dataBits, System.IO.Ports.Parity parity, System.IO.Ports.StopBits stopBits, System.Boolean dtrEnable, System.Boolean rtsEnable, System.IO.Ports.Handshake handshake, System.Int32 readTimeout, System.Int32 writeTimeout, System.Int32 readBufferSize, System.Int32 writeBufferSize) [0x0001b] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPortStream..ctor(string,int,int,System.IO.Ports.Parity,System.IO.Ports.StopBits,bool,bool,System.IO.Ports.Handshake,int,int,int,int)
+  at System.IO.Ports.SerialPort.Open () [0x0006f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPort.Open()
+  at radar.serial.SerialHandler.ConnectToPort (System.IO.Ports.SerialPort& sp, System.String portName, System.Int32 baudRate, System.IO.Ports.Parity parity, System.Int32 dataBits, System.IO.Ports.StopBits stopBits) [0x00018] in /home/harryh/RADAR/RADAR/Assets/Scripts/radar/Serial/SerialHandler.cs:80 
+[2026-03-15 07:47:59.303]<DEBUG> [SerialHandler]Serial port closed.
+[2026-03-15 07:47:59.303]<ERROR> [SerialHandler]Failed to open serial port: System.IO.IOException: 权限不够
+  at System.IO.Ports.SerialPortStream.ThrowIOException () [0x0000f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at System.IO.Ports.SerialPortStream..ctor (System.String portName, System.Int32 baudRate, System.Int32 dataBits, System.IO.Ports.Parity parity, System.IO.Ports.StopBits stopBits, System.Boolean dtrEnable, System.Boolean rtsEnable, System.IO.Ports.Handshake handshake, System.Int32 readTimeout, System.Int32 writeTimeout, System.Int32 readBufferSize, System.Int32 writeBufferSize) [0x0001b] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPortStream..ctor(string,int,int,System.IO.Ports.Parity,System.IO.Ports.StopBits,bool,bool,System.IO.Ports.Handshake,int,int,int,int)
+  at System.IO.Ports.SerialPort.Open () [0x0006f] in <50602edecc214c9cb852ddb64b4f988f>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.Ports.SerialPort.Open()
+  at radar.serial.SerialHandler.ConnectToPort (System.IO.Ports.SerialPort& sp, System.String portName, System.Int32 baudRate, System.IO.Ports.Parity parity, System.Int32 dataBits, System.IO.Ports.StopBits stopBits) [0x00018] in /home/harryh/RADAR/RADAR/Assets/Scripts/radar/Serial/SerialHandler.cs:80 
+[2026-03-15 07:48:02.355]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:48:02.944]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:48:03.515]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:48:04.230]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:48:04.814]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:48:05.251]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:48:08.830]<DEBUG> [Detector]Robot Inferencer initializing...
+[2026-03-15 07:48:08.830]<DEBUG> [Detector]initialized.
+[2026-03-15 07:48:08.830]<DEBUG> [Detector]Detection started.
+[2026-03-15 07:48:16.386]<DEBUG> [Detector]Detection stopped.
+[2026-03-15 07:48:23.596]<DEBUG> [Detector]Robot Inferencer initializing...
+[2026-03-15 07:48:23.596]<DEBUG> [Yolov8Inferencer]Model loaded: car_v8n
+[2026-03-15 07:48:23.597]<DEBUG> [Yolov8Inferencer]Model class count: 1
+[2026-03-15 07:48:23.597]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:48:23.597]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:48:23.597]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:48:23.597]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:48:23.597]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:48:23.597]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:48:23.598]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:48:23.598]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:48:23.598]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:48:23.598]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:48:23.598]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:48:23.598]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:48:23.599]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:48:23.599]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:48:23.599]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:48:23.599]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:48:23.599]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:48:23.599]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:48:23.599]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:48:23.599]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:48:23.600]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:48:23.600]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:48:23.600]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:48:23.600]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:48:23.600]<DEBUG> [Detector]initialized.
+[2026-03-15 07:48:23.600]<DEBUG> [Detector]Detection started.
+[2026-03-15 07:50:38.094]<DEBUG> [Detector]Detection stopped.
+[2026-03-15 07:52:23.426]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:52:24.411]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:52:25.435]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:52:30.904]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:52:32.256]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:52:34.337]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.

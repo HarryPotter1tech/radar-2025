@@ -1,0 +1,71 @@
+---WebCameraHandler Log File Created: 2026-03-15 05:41:53.933 ---
+[2026-03-15 05:41:53.933]<DEBUG> [WebCameraHandler]Camera devices scanned: 5 devices found.
+[2026-03-15 05:41:53.933]<DEBUG> [WebCameraHandler]--- Camera device 0: UGREEN 95348: UGREEN 95348 (/dev/video0)
+[2026-03-15 05:41:53.933]<DEBUG> [WebCameraHandler]--- Camera device 1: UGREEN 95348: UGREEN 95348 (/dev/video1)
+[2026-03-15 05:41:53.933]<DEBUG> [WebCameraHandler]--- Camera device 2: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video2)
+[2026-03-15 05:41:53.933]<DEBUG> [WebCameraHandler]--- Camera device 3: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video3)
+[2026-03-15 05:41:53.933]<DEBUG> [WebCameraHandler]--- Camera device 4: UGREEN Virtual Camera (/dev/video4)
+[2026-03-15 05:41:54.227]<DEBUG> [WebCameraHandler]Camera devices scanned: 5 devices found.
+[2026-03-15 05:41:54.227]<DEBUG> [WebCameraHandler]--- Camera device 0: UGREEN 95348: UGREEN 95348 (/dev/video0)
+[2026-03-15 05:41:54.227]<DEBUG> [WebCameraHandler]--- Camera device 1: UGREEN 95348: UGREEN 95348 (/dev/video1)
+[2026-03-15 05:41:54.227]<DEBUG> [WebCameraHandler]--- Camera device 2: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video2)
+[2026-03-15 05:41:54.227]<DEBUG> [WebCameraHandler]--- Camera device 3: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video3)
+[2026-03-15 05:41:54.227]<DEBUG> [WebCameraHandler]--- Camera device 4: UGREEN Virtual Camera (/dev/video4)
+[2026-03-15 05:41:54.713]<DEBUG> [WebCameraHandler]Camera devices scanned: 5 devices found.
+[2026-03-15 05:41:54.713]<DEBUG> [WebCameraHandler]--- Camera device 0: UGREEN 95348: UGREEN 95348 (/dev/video0)
+[2026-03-15 05:41:54.713]<DEBUG> [WebCameraHandler]--- Camera device 1: UGREEN 95348: UGREEN 95348 (/dev/video1)
+[2026-03-15 05:41:54.713]<DEBUG> [WebCameraHandler]--- Camera device 2: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video2)
+[2026-03-15 05:41:54.713]<DEBUG> [WebCameraHandler]--- Camera device 3: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video3)
+[2026-03-15 05:41:54.713]<DEBUG> [WebCameraHandler]--- Camera device 4: UGREEN Virtual Camera (/dev/video4)
+[2026-03-15 05:42:00.513]<ERROR> [WebCameraHandler]Failed to open UGREEN 95348: UGREEN 95348 (/dev/video0).
+[2026-03-15 05:42:02.982]<ERROR> [WebCameraHandler]Failed to open UGREEN 95348: UGREEN 95348 (/dev/video0).
+[2026-03-15 05:42:05.939]<ERROR> [WebCameraHandler]Failed to open UGREEN 95348: UGREEN 95348 (/dev/video0).
+[2026-03-15 05:42:07.138]<ERROR> [WebCameraHandler]Failed to open UGREEN 95348: UGREEN 95348 (/dev/video0).
+[2026-03-15 05:42:08.392]<ERROR> [WebCameraHandler]Failed to open UGREEN 95348: UGREEN 95348 (/dev/video0).
+[2026-03-15 05:42:09.643]<ERROR> [WebCameraHandler]Failed to open UGREEN 95348: UGREEN 95348 (/dev/video0).
+[2026-03-15 05:42:13.541]<ERROR> [WebCameraHandler]Failed to open UGREEN 95348: UGREEN 95348 (/dev/video0).
+[2026-03-15 05:42:15.472]<ERROR> [WebCameraHandler]Failed to open UGREEN 95348: UGREEN 95348 (/dev/video1).
+[2026-03-15 05:42:17.635]<DEBUG> [WebCameraHandler]USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video2) opened successfully.
+[2026-03-15 05:42:21.784]<ERROR> [WebCameraHandler]Failed to open USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video2).
+[2026-03-15 05:42:24.507]<ERROR> [WebCameraHandler]Failed to open UGREEN Virtual Camera (/dev/video4).
+[2026-03-15 05:42:31.529]<ERROR> [WebCameraHandler]Failed to open UGREEN Virtual Camera (/dev/video4).
+[2026-03-15 05:42:32.783]<ERROR> [WebCameraHandler]Failed to open UGREEN Virtual Camera (/dev/video4).
+[2026-03-15 05:42:39.387]<ERROR> [WebCameraHandler]Failed to open UGREEN Virtual Camera (/dev/video4).
+[2026-03-15 05:42:50.384]<ERROR> [WebCameraHandler]Failed to open UGREEN 95348: UGREEN 95348 (/dev/video0).
+[2026-03-15 05:42:52.218]<ERROR> [WebCameraHandler]Failed to open UGREEN 95348: UGREEN 95348 (/dev/video0).
+[2026-03-15 05:42:53.463]<ERROR> [WebCameraHandler]Failed to open UGREEN 95348: UGREEN 95348 (/dev/video0).
+[2026-03-15 05:42:54.788]<ERROR> [WebCameraHandler]Failed to open UGREEN 95348: UGREEN 95348 (/dev/video0).
+[2026-03-15 05:42:54.987]<ERROR> [WebCameraHandler]Failed to open UGREEN 95348: UGREEN 95348 (/dev/video1).
+[2026-03-15 05:42:55.736]<ERROR> [WebCameraHandler]Failed to open USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video3).
+[2026-03-15 05:42:56.050]<ERROR> [WebCameraHandler]Failed to open USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video3).
+[2026-03-15 05:42:57.990]<ERROR> [WebCameraHandler]Failed to open UGREEN Virtual Camera (/dev/video4).
+[2026-03-15 05:43:01.241]<DEBUG> [WebCameraHandler]Camera devices scanned: 5 devices found.
+[2026-03-15 05:43:01.242]<DEBUG> [WebCameraHandler]--- Camera device 0: UGREEN 95348: UGREEN 95348 (/dev/video0)
+[2026-03-15 05:43:01.242]<DEBUG> [WebCameraHandler]--- Camera device 1: UGREEN 95348: UGREEN 95348 (/dev/video1)
+[2026-03-15 05:43:01.242]<DEBUG> [WebCameraHandler]--- Camera device 2: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video2)
+[2026-03-15 05:43:01.242]<DEBUG> [WebCameraHandler]--- Camera device 3: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video3)
+[2026-03-15 05:43:01.242]<DEBUG> [WebCameraHandler]--- Camera device 4: UGREEN Virtual Camera (/dev/video4)
+[2026-03-15 05:43:02.405]<DEBUG> [WebCameraHandler]Camera devices scanned: 5 devices found.
+[2026-03-15 05:43:02.405]<DEBUG> [WebCameraHandler]--- Camera device 0: UGREEN 95348: UGREEN 95348 (/dev/video0)
+[2026-03-15 05:43:02.405]<DEBUG> [WebCameraHandler]--- Camera device 1: UGREEN 95348: UGREEN 95348 (/dev/video1)
+[2026-03-15 05:43:02.406]<DEBUG> [WebCameraHandler]--- Camera device 2: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video2)
+[2026-03-15 05:43:02.406]<DEBUG> [WebCameraHandler]--- Camera device 3: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video3)
+[2026-03-15 05:43:02.406]<DEBUG> [WebCameraHandler]--- Camera device 4: UGREEN Virtual Camera (/dev/video4)
+[2026-03-15 05:43:11.658]<DEBUG> [WebCameraHandler]Camera devices scanned: 5 devices found.
+[2026-03-15 05:43:11.658]<DEBUG> [WebCameraHandler]--- Camera device 0: UGREEN 95348: UGREEN 95348 (/dev/video0)
+[2026-03-15 05:43:11.659]<DEBUG> [WebCameraHandler]--- Camera device 1: UGREEN 95348: UGREEN 95348 (/dev/video1)
+[2026-03-15 05:43:11.659]<DEBUG> [WebCameraHandler]--- Camera device 2: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video2)
+[2026-03-15 05:43:11.659]<DEBUG> [WebCameraHandler]--- Camera device 3: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video3)
+[2026-03-15 05:43:11.659]<DEBUG> [WebCameraHandler]--- Camera device 4: UGREEN Virtual Camera (/dev/video4)
+[2026-03-15 05:43:15.786]<DEBUG> [WebCameraHandler]Camera devices scanned: 5 devices found.
+[2026-03-15 05:43:15.786]<DEBUG> [WebCameraHandler]--- Camera device 0: UGREEN 95348: UGREEN 95348 (/dev/video0)
+[2026-03-15 05:43:15.786]<DEBUG> [WebCameraHandler]--- Camera device 1: UGREEN 95348: UGREEN 95348 (/dev/video1)
+[2026-03-15 05:43:15.786]<DEBUG> [WebCameraHandler]--- Camera device 2: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video2)
+[2026-03-15 05:43:15.786]<DEBUG> [WebCameraHandler]--- Camera device 3: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video3)
+[2026-03-15 05:43:15.786]<DEBUG> [WebCameraHandler]--- Camera device 4: UGREEN Virtual Camera (/dev/video4)
+[2026-03-15 05:43:16.503]<DEBUG> [WebCameraHandler]Camera devices scanned: 5 devices found.
+[2026-03-15 05:43:16.504]<DEBUG> [WebCameraHandler]--- Camera device 0: UGREEN 95348: UGREEN 95348 (/dev/video0)
+[2026-03-15 05:43:16.504]<DEBUG> [WebCameraHandler]--- Camera device 1: UGREEN 95348: UGREEN 95348 (/dev/video1)
+[2026-03-15 05:43:16.504]<DEBUG> [WebCameraHandler]--- Camera device 2: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video2)
+[2026-03-15 05:43:16.504]<DEBUG> [WebCameraHandler]--- Camera device 3: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video3)
+[2026-03-15 05:43:16.504]<DEBUG> [WebCameraHandler]--- Camera device 4: UGREEN Virtual Camera (/dev/video4)

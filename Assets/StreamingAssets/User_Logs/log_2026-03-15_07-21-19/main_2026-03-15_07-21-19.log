@@ -1,0 +1,41 @@
+--- Log File Created: 2026-03-15 07:21:19.521 ---
+[2026-03-15 07:21:19.665]<DEBUG> [Detector]Robot Inferencer initializing...
+[2026-03-15 07:21:19.666]<DEBUG> [Yolov8Inferencer]Model loaded: car_v8n
+[2026-03-15 07:21:19.666]<DEBUG> [Yolov8Inferencer]Model class count: 1
+[2026-03-15 07:21:19.666]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:21:19.666]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:21:19.666]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:21:19.667]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:21:19.667]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:21:19.667]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:21:19.667]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:21:19.667]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:21:19.667]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:21:19.667]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:21:19.667]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:21:19.667]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:21:19.667]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:21:19.667]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:21:19.667]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:21:19.667]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:21:19.667]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:21:19.667]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:21:19.667]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:21:19.667]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:21:19.668]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:21:19.668]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:21:19.668]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:21:19.668]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:21:19.668]<DEBUG> [Detector]initialized.
+[2026-03-15 07:21:33.077]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:33.933]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:34.668]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:35.717]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:39.584]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:40.339]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:40.656]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:41.072]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:41.283]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:42.445]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:43.097]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:44.142]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.

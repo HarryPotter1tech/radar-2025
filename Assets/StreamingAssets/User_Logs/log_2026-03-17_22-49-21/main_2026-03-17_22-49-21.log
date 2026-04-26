@@ -1,0 +1,42 @@
+--- Log File Created: 2026-03-17 22:49:21.702 ---
+[2026-03-17 22:49:21.861]<DEBUG> [Detector]Robot Inferencer initializing...
+[2026-03-17 22:49:21.862]<DEBUG> [Yolov8Inferencer]Model loaded: car_v8n
+[2026-03-17 22:49:21.862]<DEBUG> [Yolov8Inferencer]Model class count: 1
+[2026-03-17 22:49:21.862]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-17 22:49:21.862]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-17 22:49:21.862]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-17 22:49:21.862]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-17 22:49:21.862]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-17 22:49:21.862]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-17 22:49:21.862]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-17 22:49:21.862]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-17 22:49:21.862]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-17 22:49:21.862]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-17 22:49:21.863]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-17 22:49:21.863]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-17 22:49:21.863]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-17 22:49:21.863]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-17 22:49:21.863]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-17 22:49:21.863]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-17 22:49:21.863]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-17 22:49:21.863]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-17 22:49:21.863]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-17 22:49:21.863]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-17 22:49:21.863]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-17 22:49:21.863]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-17 22:49:21.863]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-17 22:49:21.863]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-17 22:49:21.863]<DEBUG> [Detector]initialized.
+[2026-03-17 22:49:28.074]<DEBUG> [WebCameraHandler]Camera devices scanned: 5 devices found.
+[2026-03-17 22:49:28.074]<DEBUG> [WebCameraHandler]--- Camera device 0: UGREEN 95348: UGREEN 95348 (/dev/video0)
+[2026-03-17 22:49:28.074]<DEBUG> [WebCameraHandler]--- Camera device 1: UGREEN 95348: UGREEN 95348 (/dev/video1)
+[2026-03-17 22:49:28.075]<DEBUG> [WebCameraHandler]--- Camera device 2: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video2)
+[2026-03-17 22:49:28.075]<DEBUG> [WebCameraHandler]--- Camera device 3: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video3)
+[2026-03-17 22:49:28.075]<DEBUG> [WebCameraHandler]--- Camera device 4: VirtualCamera (/dev/video4)
+[2026-03-17 22:49:28.894]<DEBUG> [WebCameraHandler]VirtualCamera (/dev/video4) opened successfully.
+[2026-03-17 22:50:01.723]<DEBUG> [WebCameraHandler]Camera devices scanned: 5 devices found.
+[2026-03-17 22:50:01.724]<DEBUG> [WebCameraHandler]--- Camera device 0: UGREEN 95348: UGREEN 95348 (/dev/video0)
+[2026-03-17 22:50:01.724]<DEBUG> [WebCameraHandler]--- Camera device 1: UGREEN 95348: UGREEN 95348 (/dev/video1)
+[2026-03-17 22:50:01.724]<DEBUG> [WebCameraHandler]--- Camera device 2: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video2)
+[2026-03-17 22:50:01.724]<DEBUG> [WebCameraHandler]--- Camera device 3: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video3)
+[2026-03-17 22:50:01.724]<DEBUG> [WebCameraHandler]--- Camera device 4: VirtualCamera (/dev/video4)

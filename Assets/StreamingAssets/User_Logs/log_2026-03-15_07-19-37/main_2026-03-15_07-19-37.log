@@ -1,0 +1,56 @@
+--- Log File Created: 2026-03-15 07:19:37.532 ---
+[2026-03-15 07:19:37.721]<DEBUG> [Detector]Robot Inferencer initializing...
+[2026-03-15 07:19:37.722]<DEBUG> [Yolov8Inferencer]Model loaded: car_v8n
+[2026-03-15 07:19:37.722]<DEBUG> [Yolov8Inferencer]Model class count: 1
+[2026-03-15 07:19:37.722]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:19:37.723]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:19:37.723]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:19:37.723]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:19:37.723]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:19:37.723]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:19:37.723]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:19:37.723]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:19:37.723]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:19:37.723]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:19:37.723]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:19:37.723]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:19:37.723]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:19:37.723]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:19:37.723]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:19:37.723]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:19:37.723]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:19:37.723]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:19:37.724]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:19:37.724]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:19:37.724]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:19:37.724]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:19:37.724]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:19:37.724]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:19:37.724]<DEBUG> [Detector]initialized.
+[2026-03-15 07:19:51.433]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:19:55.318]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:20:06.561]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:20:07.309]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:20:07.832]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:20:08.356]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:20:08.774]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:20:12.567]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:20:12.978]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:20:13.393]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:20:13.704]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:20:16.237]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:20:34.348]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:20:35.101]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:04.334]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:05.123]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:05.446]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:05.666]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:05.971]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:05.979]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:06.289]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:06.400]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:07.349]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:07.873]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:08.709]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:09.346]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.
+[2026-03-15 07:21:10.079]<DEBUG> [WebCameraHandler]Camera devices scanned: 0 devices found.

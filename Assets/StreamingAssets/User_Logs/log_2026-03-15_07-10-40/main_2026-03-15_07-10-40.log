@@ -1,0 +1,62 @@
+--- Log File Created: 2026-03-15 07:10:40.327 ---
+[2026-03-15 07:10:40.512]<DEBUG> [Detector]Robot Inferencer initializing...
+[2026-03-15 07:10:40.513]<DEBUG> [Yolov8Inferencer]Model loaded: car_v8n
+[2026-03-15 07:10:40.513]<DEBUG> [Yolov8Inferencer]Model class count: 1
+[2026-03-15 07:10:40.513]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:10:40.513]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:10:40.514]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:10:40.514]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:10:40.514]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:10:40.514]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:10:40.514]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:10:40.514]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:10:40.514]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:10:40.514]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:10:40.514]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:10:40.514]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:10:40.515]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:10:40.515]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:10:40.515]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:10:40.515]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:10:40.515]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:10:40.515]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:10:40.515]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:10:40.515]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:10:40.515]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:10:40.515]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:10:40.515]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-03-15 07:10:40.515]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-03-15 07:10:40.515]<DEBUG> [Detector]initialized.
+[2026-03-15 07:10:53.150]<DEBUG> [WebCameraHandler]Camera devices scanned: 5 devices found.
+[2026-03-15 07:10:53.151]<DEBUG> [WebCameraHandler]--- Camera device 0: UGREEN 95348: UGREEN 95348 (/dev/video0)
+[2026-03-15 07:10:53.151]<DEBUG> [WebCameraHandler]--- Camera device 1: UGREEN 95348: UGREEN 95348 (/dev/video1)
+[2026-03-15 07:10:53.151]<DEBUG> [WebCameraHandler]--- Camera device 2: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video2)
+[2026-03-15 07:10:53.151]<DEBUG> [WebCameraHandler]--- Camera device 3: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video3)
+[2026-03-15 07:10:53.151]<DEBUG> [WebCameraHandler]--- Camera device 4: OBS Virtual Camera (/dev/video4)
+[2026-03-15 07:11:00.254]<ERROR> [WebCameraHandler]Failed to open OBS Virtual Camera (/dev/video4).
+[2026-03-15 07:11:11.331]<ERROR> [WebCameraHandler]Failed to open UGREEN 95348: UGREEN 95348 (/dev/video1).
+[2026-03-15 07:11:16.225]<ERROR> [WebCameraHandler]Failed to open UGREEN 95348: UGREEN 95348 (/dev/video0).
+[2026-03-15 07:11:28.938]<DEBUG> [SerialHandler]Serial port closed.
+[2026-03-15 07:11:29.489]<DEBUG> [SerialHandler]Serial port closed.
+[2026-03-15 07:11:30.420]<DEBUG> [SerialHandler]Serial port closed.
+[2026-03-15 07:11:34.435]<DEBUG> [SerialHandler]Serial port closed.
+[2026-03-15 07:11:42.589]<ERROR> [WebCameraHandler]Failed to open OBS Virtual Camera (/dev/video4).
+[2026-03-15 07:11:51.511]<DEBUG> [WebCameraHandler]Camera devices scanned: 5 devices found.
+[2026-03-15 07:11:51.511]<DEBUG> [WebCameraHandler]--- Camera device 0: UGREEN 95348: UGREEN 95348 (/dev/video0)
+[2026-03-15 07:11:51.511]<DEBUG> [WebCameraHandler]--- Camera device 1: UGREEN 95348: UGREEN 95348 (/dev/video1)
+[2026-03-15 07:11:51.511]<DEBUG> [WebCameraHandler]--- Camera device 2: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video2)
+[2026-03-15 07:11:51.511]<DEBUG> [WebCameraHandler]--- Camera device 3: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video3)
+[2026-03-15 07:11:51.511]<DEBUG> [WebCameraHandler]--- Camera device 4: OBS Virtual Camera (/dev/video4)
+[2026-03-15 07:11:52.632]<DEBUG> [WebCameraHandler]Camera devices scanned: 5 devices found.
+[2026-03-15 07:11:52.632]<DEBUG> [WebCameraHandler]--- Camera device 0: UGREEN 95348: UGREEN 95348 (/dev/video0)
+[2026-03-15 07:11:52.632]<DEBUG> [WebCameraHandler]--- Camera device 1: UGREEN 95348: UGREEN 95348 (/dev/video1)
+[2026-03-15 07:11:52.632]<DEBUG> [WebCameraHandler]--- Camera device 2: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video2)
+[2026-03-15 07:11:52.632]<DEBUG> [WebCameraHandler]--- Camera device 3: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video3)
+[2026-03-15 07:11:52.632]<DEBUG> [WebCameraHandler]--- Camera device 4: OBS Virtual Camera (/dev/video4)
+[2026-03-15 07:11:55.951]<ERROR> [WebCameraHandler]Failed to open OBS Virtual Camera (/dev/video4).
+[2026-03-15 07:15:21.182]<DEBUG> [WebCameraHandler]Camera devices scanned: 5 devices found.
+[2026-03-15 07:15:21.183]<DEBUG> [WebCameraHandler]--- Camera device 0: UGREEN 95348: UGREEN 95348 (/dev/video0)
+[2026-03-15 07:15:21.183]<DEBUG> [WebCameraHandler]--- Camera device 1: UGREEN 95348: UGREEN 95348 (/dev/video1)
+[2026-03-15 07:15:21.183]<DEBUG> [WebCameraHandler]--- Camera device 2: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video2)
+[2026-03-15 07:15:21.183]<DEBUG> [WebCameraHandler]--- Camera device 3: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video3)
+[2026-03-15 07:15:21.183]<DEBUG> [WebCameraHandler]--- Camera device 4: OBS Virtual Camera (/dev/video4)
