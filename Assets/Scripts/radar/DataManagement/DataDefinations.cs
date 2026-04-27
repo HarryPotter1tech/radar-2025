@@ -117,6 +117,8 @@ namespace radar.data
     {
         public int DoubleDebuffChances;
         public bool IsDoubleDebuffAble;
+        public int EncryptionRank;
+        public bool IsModifyKeyAble;
     }
     public class StateDatas
     {
@@ -133,7 +135,7 @@ namespace radar.data
             enemyFacilities = new RobotSets(new List<RobotType> { RobotType.Dart, RobotType.Drone, RobotType.Outpost, RobotType.Base });
             allieFacilities = new RobotSets(new List<RobotType> { RobotType.Dart, RobotType.Drone, RobotType.Outpost, RobotType.Base });
             gameState = new GameState { GameStage = GameStage.NotStarted, GameTimeSeconds = 0, GameCount = 0, EnemySide = Team.Blue };
-            radarInfo = new RadarInfo { DoubleDebuffChances = 0, IsDoubleDebuffAble = false };
+            radarInfo = new RadarInfo { DoubleDebuffChances = 0, IsDoubleDebuffAble = false, EncryptionRank = 0, IsModifyKeyAble = false };
         }
     }
 }

@@ -79,32 +79,37 @@ namespace radar.serial.package
     {
         public byte RadarInfoData;
 
-        public int DoubleDebuffChances => (RadarInfoData & 0x01) + (((RadarInfoData & 0x02) == 0x02) ? 2 : 0);
-        public bool IsDoubleDebuffAble => (RadarInfoData & 0x03) == 0x03;
+        public int DoubleDebuffChances => RadarInfoData & 0x03;
+        public bool IsDoubleDebuffAble => ((RadarInfoData >> 2 )& 0x01 )== 0x01;
+        public int EncryptionRank => (RadarInfoData>>3 )&0x03;
+        public bool IsModifyKeyAble =>((RadarInfoData >>5)&0x01 )== 0x01; 
     }
 
     /* 
         CMD: 0x0101  4 bytes 场地事件数据，固定以 1Hz 频率发送
-        
+
         0：未占领/未激活
         1：已占领/已激活
-        bit 0-2：
-        - bit 0：己方与兑换区不重叠的补给区占领状态，1 为已占领
-        - bit 1：己方与兑换区重叠的补给区占领状态，1 为已占领
-        - bit 2：己方补给区的占领状态，1 为已占领（仅 RMUL 适用）
-        bit 3-5：己方能量机关状态
-        - bit 3：己方小能量机关的激活状态，1 为已激活
-        - bit 4：己方大能量机关的激活状态，1 为已激活
-        - bit 5-6：己方中央高地的占领状态，1 为被己方占领，2 为被对方占领
-        - bit 7-8：己方梯形高地的占领状态，1 为已占领
-        - bit 9-17：对方飞镖最后一次击中己方前哨站或基地的时间（0-420，开
-        局默认为 0）
-        - bit 18-20：对方飞镖最后一次击中己方前哨站或基地的具体目标，开局
-        默认为 0，1 为击中前哨站，2 为击中基地固定目标，3 为击中基地随机
-        固定目标，4 为击中基地随机移动目标
-        - bit 21-22：中心增益点的占领状态，0 为未被占领，1 为被己方占领，2
-        为被对方占领，3 为被双方占领。（仅 RMUL 适用）
-        - bit 23-31：保留位
+
+        bit 0：己方补给区占领状态，1 为己占领
+        bit 1：保留位
+        bit 2：己方补给区占领状态，1 为己占领（仅 RMUL 适用）
+        bit 3-4：己方小能量机关激活状态，0 未激活，1 已激活，2 正在激活
+        bit 5-6：己方大能量机关激活状态，0 未激活，1 已激活，2 正在激活
+        bit 7-8：己方中央高地占领状态，1 为己方占领，2 为对方占领
+        bit 9-10：己方梯形高地占领状态，1 为己占领
+        bit 11-19：对方飞镖最后一次击中己方前哨站或基地的时间（0-420）
+        bit 20-22：对方飞镖最后一次击中的具体目标：
+                  0 默认，1 前哨站，2 基地固定目标，3 基地随机固定目标，
+                  4 基地随机移动目标，5 基地末端移动目标
+        bit 23-24：中心增益点占领状态（仅 RMUL）：
+                  0 未占领，1 己方占领，2 对方占领，3 双方占领
+        bit 25-26：己方堡垒增益点占领状态：
+                  0 未占领，1 己方占领，2 对方占领，3 双方占领
+        bit 27-28：己方前哨站增益点占领状态：
+                  0 未占领，1 己方占领，2 对方占领
+        bit 29：己方基地增益点占领状态，1 为己占领
+        bit 30-31：保留位
     */
     [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential, Pack = 1)]
     public struct EventData
@@ -112,15 +117,18 @@ namespace radar.serial.package
         public uint EventDataValue;
 
         public bool IsSupplyAreaOccupied => (EventDataValue & 0x01) == 0x01;
-        public bool IsSupplyAreaOccupied2 => (EventDataValue & 0x02) == 0x02;
+        public bool IsReservedBit1Set => (EventDataValue & 0x02) == 0x02;
         public bool IsSupplyAreaOccupied3 => (EventDataValue & 0x04) == 0x04;
-        public bool IsLittleEnergyOrganActivated => (EventDataValue & 0x08) == 0x08;
-        public bool IsBigEnergyOrganActivated => (EventDataValue & 0x10) == 0x10;
-        public bool IsCentralHighlandOccupied => (EventDataValue & 0x20) == 0x20;
-        public bool IsTrapezoidalHighlandOccupied => (EventDataValue & 0x40) == 0x40;
-        public int EnemyDartHitTime => (int)((EventDataValue >> 9) & 0x1FF);
-        public int EnemyDartHitTarget => (int)((EventDataValue >> 18) & 0x07);
-        public int CenterGainPointStatus => (int)((EventDataValue >> 21) & 0x03);
+        public int LittleEnergyOrganStatus => (int)((EventDataValue >> 3) & 0x03);
+        public int BigEnergyOrganStatus => (int)((EventDataValue >> 5) & 0x03);
+        public int CentralHighlandStatus => (int)((EventDataValue >> 7) & 0x03);
+        public int TrapezoidalHighlandStatus => (int)((EventDataValue >> 9) & 0x03);
+        public int EnemyDartHitTime => (int)((EventDataValue >> 11) & 0x1FF);
+        public int EnemyDartHitTarget => (int)((EventDataValue >> 20) & 0x07);
+        public int CenterGainPointStatus => (int)((EventDataValue >> 23) & 0x03);
+        public int FortressGainPointStatus => (int)((EventDataValue >> 25) & 0x03);
+        public int OutpostGainPointStatus => (int)((EventDataValue >> 27) & 0x03);
+        public bool IsBaseGainPointOccupied => (EventDataValue & (1u << 29)) != 0;
     }
 
     [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential, Pack = 1)]
@@ -157,13 +165,32 @@ namespace radar.serial.package
         public ushort SentryPositionX;
         public ushort SentryPositionY;
     }
+    /*
+        CMD: 0x0121 雷达自主决策指令 data，长度 8 bytes
+        byte0: radar_cmd，雷达确认触发双倍易伤计数（开局0，合法增量+1，最大2）
+        byte1: password_cmd，密钥相关命令字节
+        byte2-7: password_1..password_6，密钥数据
+    */
+    [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential, Pack = 1)]
+    public struct RadarDecisionCmd0121
+    {
+        public byte radar_cmd;
+        public byte password_cmd;
+        public byte password_1;
+        public byte password_2;
+        public byte password_3;
+        public byte password_4;
+        public byte password_5;
+        public byte password_6;
+    }
+
     [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential, Pack = 1)]
     public struct RobotInteraction_Radar
     {
         public ushort dataCmdId;
         public ushort senderId;
         public ushort receiverId;
-        public byte data;
+        public RadarDecisionCmd0121 data;
     }
 
 }

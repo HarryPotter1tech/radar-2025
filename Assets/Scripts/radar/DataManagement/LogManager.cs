@@ -56,7 +56,6 @@ namespace radar.data
                 System.IO.File.WriteAllText(mainLogFilePath, $"--- Log File Created: " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff") + " ---\n");
                 Debug.Log("Log file created at: " + mainLogFilePath);
             }
-            logQueue_.Clear();
         }
 
         void Update()
