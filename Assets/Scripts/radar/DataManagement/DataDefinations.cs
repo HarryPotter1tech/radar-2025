@@ -119,6 +119,7 @@ namespace radar.data
         public bool IsDoubleDebuffAble;
         public int EncryptionRank;
         public bool IsModifyKeyAble;
+        public ushort RadarMarkProgress;
     }
     public class StateDatas
     {

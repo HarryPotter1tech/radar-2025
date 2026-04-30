@@ -261,6 +261,9 @@ namespace radar.serial
                     case 0x0101: // Game Buff
                         getGameBuff(body.Data);
                         break;
+                    case 0x020C: // Radar Mark Progress
+                        getRadarMarkProgress(body.Data);
+                        break;
                     case 0x020E: // Radar Status
                         getRadarStatus(body.Data);
                         break;
@@ -306,7 +309,7 @@ namespace radar.serial
                 ", Red4: " + gameRobotHp.Red4.ToString() +
                 ", Red5: " + gameRobotHp.Red5.ToString() +
                 ", Red7: " + gameRobotHp.Red7.ToString() +
-                ", RedOutpost: " + gameRobotHp.RedOutpost.ToString() +
+                ", RedOutpost: " + gameRobotHp.RedOutpost.ToString() +   
                 ", RedBase: " + gameRobotHp.RedBase.ToString() +
                 ", Blue1: " + gameRobotHp.Blue1.ToString() +
                 ", Blue2: " + gameRobotHp.Blue2.ToString() +
@@ -347,10 +350,28 @@ namespace radar.serial
             {
                 DataManager.Instance.stateData.radarInfo.DoubleDebuffChances = radarInfo.DoubleDebuffChances;
                 DataManager.Instance.stateData.radarInfo.IsDoubleDebuffAble = radarInfo.IsDoubleDebuffAble;
+                DataManager.Instance.stateData.radarInfo.EncryptionRank = radarInfo.EncryptionRank;
+                DataManager.Instance.stateData.radarInfo.IsModifyKeyAble = radarInfo.IsModifyKeyAble;
             });
+            DataManager.Instance.SendRadarInfoToTcp(radarInfo.EncryptionRank, radarInfo.IsModifyKeyAble);
             LogManager.Instance.log("[SerialHandler] <0x020E> RadarStatus: " +
                 "DoubleDebuffChances: " + radarInfo.DoubleDebuffChances.ToString() +
-                ",IsDoubleDebuffAble: " + radarInfo.IsDoubleDebuffAble.ToString());
+                ",IsDoubleDebuffAble: " + radarInfo.IsDoubleDebuffAble.ToString() +
+                ",EncryptionRank: " + radarInfo.EncryptionRank.ToString() +
+                ",IsModifyKeyAble: " + radarInfo.IsModifyKeyAble.ToString());
+        }
+
+        private void getRadarMarkProgress(byte[] data)
+        {
+            IntPtr dataPtr = Marshal.UnsafeAddrOfPinnedArrayElement(data, 0);
+            package.RadarMarkProgress radarMarkProgress = Marshal.PtrToStructure<package.RadarMarkProgress>(dataPtr);
+            DataManager.Instance.UploadData(radarMarkProgress, (radarMarkProgress) =>
+            {
+                DataManager.Instance.stateData.radarInfo.RadarMarkProgress = radarMarkProgress.MarkProgress;
+            });
+
+            LogManager.Instance.log("[SerialHandler] <0x020C> RadarMarkProgress: " +
+                "MarkProgress: " + radarMarkProgress.MarkProgress.ToString());
         }
 
         private void getGameBuff(byte[] data)
@@ -359,15 +380,18 @@ namespace radar.serial
             EventData gameBuff = Marshal.PtrToStructure<EventData>(dataPtr);
             LogManager.Instance.log("[SerialHandler] <0x0101> GameBuff: " +
                 "IsSupplyAreaOccupied: " + gameBuff.IsSupplyAreaOccupied.ToString() +
-                ", IsSupplyAreaOccupied2: " + gameBuff.IsSupplyAreaOccupied2.ToString() +
+                ", IsReservedBit1Set: " + gameBuff.IsReservedBit1Set.ToString() +
                 ", IsSupplyAreaOccupied3: " + gameBuff.IsSupplyAreaOccupied3.ToString() +
-                ", IsLittleEnergyOrganActivated: " + gameBuff.IsLittleEnergyOrganActivated.ToString() +
-                ", IsBigEnergyOrganActivated: " + gameBuff.IsBigEnergyOrganActivated.ToString() +
-                ", IsCentralHighlandOccupied: " + gameBuff.IsCentralHighlandOccupied.ToString() +
-                ", IsTrapezoidalHighlandOccupied: " + gameBuff.IsTrapezoidalHighlandOccupied.ToString() +
+                ", LittleEnergyOrganStatus: " + gameBuff.LittleEnergyOrganStatus.ToString() +
+                ", BigEnergyOrganStatus: " + gameBuff.BigEnergyOrganStatus.ToString() +
+                ", CentralHighlandStatus: " + gameBuff.CentralHighlandStatus.ToString() +
+                ", TrapezoidalHighlandStatus: " + gameBuff.TrapezoidalHighlandStatus.ToString() +
                 ", EnemyDartHitTime: " + gameBuff.EnemyDartHitTime.ToString() +
                 ", EnemyDartHitTarget: " + gameBuff.EnemyDartHitTarget.ToString() +
-                ", CenterGainPointStatus: " + gameBuff.CenterGainPointStatus.ToString());
+                ", CenterGainPointStatus: " + gameBuff.CenterGainPointStatus.ToString() +
+                ", FortressGainPointStatus: " + gameBuff.FortressGainPointStatus.ToString() +
+                ", OutpostGainPointStatus: " + gameBuff.OutpostGainPointStatus.ToString() +
+                ", IsBaseGainPointOccupied: " + gameBuff.IsBaseGainPointOccupied.ToString());
         }
 
         private void getAlliedRobotInfo(byte[] data)

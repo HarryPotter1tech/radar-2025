@@ -63,7 +63,33 @@ namespace radar.serial.package
         public ushort BlueOutpost;
         public ushort BlueBase;
     }
+/*
+        CMD: 0x0121 雷达自主决策指令 data，长度 8 bytes
+        byte0: radar_cmd，雷达确认触发双倍易伤计数（开局0，合法增量+1，最大2）
+        byte1: password_cmd，密钥相关命令字节
+        byte2-7: password_1..password_6，密钥数据
+    */
+    [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential, Pack = 1)]
+    public struct RadarDecisionCmd0121
+    {
+        public byte radar_cmd;
+        public byte password_cmd;
+        public byte password_1;
+        public byte password_2;
+        public byte password_3;
+        public byte password_4;
+        public byte password_5;
+        public byte password_6;
+    }
 
+    [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential, Pack = 1)]
+    public struct RobotInteraction_Radar
+    {
+        public ushort dataCmdId;
+        public ushort senderId;
+        public ushort receiverId;
+        public RadarDecisionCmd0121 data;
+    }
 
     /*
         CMD: 0x020E 1 byte 雷达自主决策信息同步，固定以1Hz频率发送
@@ -134,12 +160,20 @@ namespace radar.serial.package
     [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential, Pack = 1)]
     public struct RadarMarkProgress
     {
-        public byte MarkHeroProgress;
-        public byte MarkEngineerProgress;
-        public byte MarkStandard3Progress;
-        public byte MarkStandard4Progress;
-        public byte MarkStandard5Progress;
-        public byte MarkSentryProgress;
+        public ushort MarkProgress;
+
+        public bool IsOpponentHeroDebuffed => (MarkProgress & (1 << 0)) != 0;
+        public bool IsOpponentEngineerDebuffed => (MarkProgress & (1 << 1)) != 0;
+        public bool IsOpponentInfantry3Debuffed => (MarkProgress & (1 << 2)) != 0;
+        public bool IsOpponentInfantry4Debuffed => (MarkProgress & (1 << 3)) != 0;
+        public bool IsOpponentAerialMarked => (MarkProgress & (1 << 4)) != 0;
+        public bool IsOpponentSentryDebuffed => (MarkProgress & (1 << 5)) != 0;
+        public bool IsAllyHeroMarked => (MarkProgress & (1 << 6)) != 0;
+        public bool IsAllyEngineerMarked => (MarkProgress & (1 << 7)) != 0;
+        public bool IsAllyInfantry3Marked => (MarkProgress & (1 << 8)) != 0;
+        public bool IsAllyInfantry4Marked => (MarkProgress & (1 << 9)) != 0;
+        public bool IsAllyAerialMarked => (MarkProgress & (1 << 10)) != 0;
+        public bool IsAllySentryMarked => (MarkProgress & (1 << 11)) != 0;
     }
 
     [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential, Pack = 1)]
@@ -152,45 +186,31 @@ namespace radar.serial.package
     [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential, Pack = 1)]
     public struct MapRobotData
     {
-        public ushort HeroPositionX;
-        public ushort HeroPositionY;
-        public ushort EngineerPositionX;
-        public ushort EngineerPositionY;
-        public ushort Infantry3PositionX;
-        public ushort Infantry3PositionY;
-        public ushort Infantry4PositionX;
-        public ushort Infantry4PositionY;
-        public ushort Infantry5PositionX;
-        public ushort Infantry5PositionY;
-        public ushort SentryPositionX;
-        public ushort SentryPositionY;
+        public ushort OpponentHeroPositionX;
+        public ushort OpponentHeroPositionY;
+        public ushort OpponentEngineerPositionX;
+        public ushort OpponentEngineerPositionY;
+        public ushort OpponentInfantry3PositionX;
+        public ushort OpponentInfantry3PositionY;
+        public ushort OpponentInfantry4PositionX;
+        public ushort OpponentInfantry4PositionY;
+        public ushort OpponentAerialPositionX;
+        public ushort OpponentAerialPositionY;
+        public ushort OpponentSentryPositionX;
+        public ushort OpponentSentryPositionY;
+        public ushort AllyHeroPositionX;
+        public ushort AllyHeroPositionY;
+        public ushort AllyEngineerPositionX;
+        public ushort AllyEngineerPositionY;
+        public ushort AllyInfantry3PositionX;
+        public ushort AllyInfantry3PositionY;
+        public ushort AllyInfantry4PositionX;
+        public ushort AllyInfantry4PositionY;
+        public ushort AllyAerialPositionX;
+        public ushort AllyAerialPositionY;
+        public ushort AllySentryPositionX;
+        public ushort AllySentryPositionY;
     }
-    /*
-        CMD: 0x0121 雷达自主决策指令 data，长度 8 bytes
-        byte0: radar_cmd，雷达确认触发双倍易伤计数（开局0，合法增量+1，最大2）
-        byte1: password_cmd，密钥相关命令字节
-        byte2-7: password_1..password_6，密钥数据
-    */
-    [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential, Pack = 1)]
-    public struct RadarDecisionCmd0121
-    {
-        public byte radar_cmd;
-        public byte password_cmd;
-        public byte password_1;
-        public byte password_2;
-        public byte password_3;
-        public byte password_4;
-        public byte password_5;
-        public byte password_6;
-    }
-
-    [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential, Pack = 1)]
-    public struct RobotInteraction_Radar
-    {
-        public ushort dataCmdId;
-        public ushort senderId;
-        public ushort receiverId;
-        public RadarDecisionCmd0121 data;
-    }
+    
 
 }

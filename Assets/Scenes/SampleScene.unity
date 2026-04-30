@@ -715,6 +715,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sendFrequencyHz: 6
+  enableTcpBridge: 1
+  tcpListenPort: 2000
+  enableTcpSend: 1
+  tcpSendHost: 192.168.1.10
+  tcpSendPort: 2001
   lastRecordTimeSeconds: 0
 --- !u!4 &323380599
 Transform:
