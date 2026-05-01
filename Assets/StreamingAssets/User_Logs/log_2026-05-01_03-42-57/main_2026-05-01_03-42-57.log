@@ -1,0 +1,32 @@
+--- Log File Created: 2026-05-01 03:42:57.843 ---
+[2026-05-01 03:42:58.004]<DEBUG> [WebCameraHandler]Starting...
+[2026-05-01 03:42:58.005]<DEBUG> [TCP]TCP bridge started at 0.0.0.0:2000
+[2026-05-01 03:42:58.005]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 03:42:58.005]<DEBUG> [Detector]Robot Inferencer initializing...
+[2026-05-01 03:42:58.005]<DEBUG> [Yolov8Inferencer]Model loaded: car_v8n
+[2026-05-01 03:42:58.006]<DEBUG> [Yolov8Inferencer]Model class count: 1
+[2026-05-01 03:42:58.006]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-01 03:42:58.006]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-01 03:42:58.006]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-01 03:42:58.006]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-01 03:42:58.006]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-01 03:42:58.006]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-01 03:42:58.006]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-01 03:42:58.006]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-01 03:42:58.006]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-01 03:42:58.006]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-01 03:42:58.006]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-01 03:42:58.006]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-01 03:42:58.006]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-01 03:42:58.006]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-01 03:42:58.006]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-01 03:42:58.007]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-01 03:42:58.007]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-01 03:42:58.007]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-01 03:42:58.007]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-01 03:42:58.007]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-01 03:42:58.007]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-01 03:42:58.007]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-01 03:42:58.007]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-01 03:42:58.007]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-01 03:42:58.007]<DEBUG> [Detector]initialized.

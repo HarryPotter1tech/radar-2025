@@ -75,4 +75,3 @@ crashlytics-build.properties
 *.onnx
 *.mp4
 *.obj
-/Assets/StreamingAssets

@@ -121,6 +121,22 @@ namespace radar.data
         public bool IsModifyKeyAble;
         public ushort RadarMarkProgress;
     }
+    public class RadarMarkProgress
+    {
+        
+        public bool IsOpponentHeroDebuffed;
+        public bool IsOpponentEngineerDebuffed;
+        public bool IsOpponentInfantry3Debuffed;
+        public bool IsOpponentInfantry4Debuffed;
+        public bool IsOpponentAerialMarked;
+        public bool IsOpponentSentryDebuffed;
+        public bool IsAllyHeroMarked;
+        public bool IsAllyEngineerMarked;
+        public bool IsAllyInfantry3Marked;
+        public bool IsAllyInfantry4Marked;
+        public bool IsAllyAerialMarked;
+        public bool IsAllySentryMarked;
+    }
     public class StateDatas
     {
         public RobotSets enemyRobots;
@@ -128,7 +144,9 @@ namespace radar.data
         public RobotSets enemyFacilities;
         public RobotSets allieFacilities;
         public RadarInfo radarInfo;
+        public RadarMarkProgress radarMarkProgress;
         public GameState gameState;
+
         public StateDatas()
         {
             enemyRobots = new RobotSets(new List<RobotType> { RobotType.Hero, RobotType.Engineer, RobotType.Infantry3, RobotType.Infantry4, RobotType.Infantry5, RobotType.Sentry, RobotType.Unkown });
@@ -137,6 +155,7 @@ namespace radar.data
             allieFacilities = new RobotSets(new List<RobotType> { RobotType.Dart, RobotType.Drone, RobotType.Outpost, RobotType.Base });
             gameState = new GameState { GameStage = GameStage.NotStarted, GameTimeSeconds = 0, GameCount = 0, EnemySide = Team.Blue };
             radarInfo = new RadarInfo { DoubleDebuffChances = 0, IsDoubleDebuffAble = false, EncryptionRank = 0, IsModifyKeyAble = false };
+            radarMarkProgress = new RadarMarkProgress { IsOpponentHeroDebuffed = false, IsOpponentEngineerDebuffed = false, IsOpponentInfantry3Debuffed = false, IsOpponentInfantry4Debuffed = false, IsOpponentAerialMarked = false, IsOpponentSentryDebuffed = false, IsAllyHeroMarked = false, IsAllyEngineerMarked = false, IsAllyInfantry3Marked = false, IsAllyInfantry4Marked = false, IsAllyAerialMarked = false, IsAllySentryMarked = false };
         }
     }
 }

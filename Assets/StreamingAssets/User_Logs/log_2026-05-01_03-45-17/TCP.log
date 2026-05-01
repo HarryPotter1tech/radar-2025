@@ -1,0 +1,6 @@
+---TCP Log File Created: 2026-05-01 03:45:17.167 ---
+[2026-05-01 03:45:17.167]<DEBUG> [TCP]TCP bridge started at 0.0.0.0:2000
+[2026-05-01 03:45:17.167]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 03:45:42.122]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 03:45:46.148]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 03:45:49.124]<WARNING> [TCP]TCP sender connect warning: Connection refused

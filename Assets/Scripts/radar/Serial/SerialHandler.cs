@@ -270,7 +270,7 @@ namespace radar.serial
                     // case 0x0301: // Allied Robot Info
                     //     break;
                     default:
-                        // LogManager.Instance.log($"[SerialHandler]CMD_ID:{body.CommandId:X4}");
+                        
                         break;
                 }
             }
@@ -367,11 +367,33 @@ namespace radar.serial
             package.RadarMarkProgress radarMarkProgress = Marshal.PtrToStructure<package.RadarMarkProgress>(dataPtr);
             DataManager.Instance.UploadData(radarMarkProgress, (radarMarkProgress) =>
             {
-                DataManager.Instance.stateData.radarInfo.RadarMarkProgress = radarMarkProgress.MarkProgress;
+                DataManager.Instance.stateData.radarMarkProgress.IsOpponentHeroDebuffed = radarMarkProgress.IsOpponentHeroDebuffed;
+                DataManager.Instance.stateData.radarMarkProgress.IsOpponentEngineerDebuffed = radarMarkProgress.IsOpponentEngineerDebuffed;
+                DataManager.Instance.stateData.radarMarkProgress.IsOpponentInfantry3Debuffed = radarMarkProgress.IsOpponentInfantry3Debuffed;
+                DataManager.Instance.stateData.radarMarkProgress.IsOpponentInfantry4Debuffed = radarMarkProgress.IsOpponentInfantry4Debuffed;
+                DataManager.Instance.stateData.radarMarkProgress.IsOpponentAerialMarked = radarMarkProgress.IsOpponentAerialMarked;
+                DataManager.Instance.stateData.radarMarkProgress.IsOpponentSentryDebuffed = radarMarkProgress.IsOpponentSentryDebuffed;
+                DataManager.Instance.stateData.radarMarkProgress.IsAllyHeroMarked = radarMarkProgress.IsAllyHeroMarked;
+                DataManager.Instance.stateData.radarMarkProgress.IsAllyEngineerMarked = radarMarkProgress.IsAllyEngineerMarked;
+                DataManager.Instance.stateData.radarMarkProgress.IsAllyInfantry3Marked = radarMarkProgress.IsAllyInfantry3Marked;
+                DataManager.Instance.stateData.radarMarkProgress.IsAllyInfantry4Marked = radarMarkProgress.IsAllyInfantry4Marked;
+                DataManager.Instance.stateData.radarMarkProgress.IsAllyAerialMarked = radarMarkProgress.IsAllyAerialMarked;
+                DataManager.Instance.stateData.radarMarkProgress.IsAllySentryMarked = radarMarkProgress.IsAllySentryMarked;
             });
 
             LogManager.Instance.log("[SerialHandler] <0x020C> RadarMarkProgress: " +
-                "MarkProgress: " + radarMarkProgress.MarkProgress.ToString());
+                "IsOpponentHeroDebuffed: " + radarMarkProgress.IsOpponentHeroDebuffed.ToString() +
+                ", IsOpponentEngineerDebuffed: " + radarMarkProgress.IsOpponentEngineerDebuffed.ToString() +
+                ", IsOpponentInfantry3Debuffed: " + radarMarkProgress.IsOpponentInfantry3Debuffed.ToString() +
+                ", IsOpponentInfantry4Debuffed: " + radarMarkProgress.IsOpponentInfantry4Debuffed.ToString() +
+                ", IsOpponentAerialMarked: " + radarMarkProgress.IsOpponentAerialMarked.ToString() +
+                ", IsOpponentSentryDebuffed: " + radarMarkProgress.IsOpponentSentryDebuffed.ToString() +
+                ", IsAllyHeroMarked: " + radarMarkProgress.IsAllyHeroMarked.ToString() +
+                ", IsAllyEngineerMarked: " + radarMarkProgress.IsAllyEngineerMarked.ToString() +
+                ", IsAllyInfantry3Marked: " + radarMarkProgress.IsAllyInfantry3Marked.ToString() +
+                ", IsAllyInfantry4Marked: " + radarMarkProgress.IsAllyInfantry4Marked.ToString() +
+                ", IsAllyAerialMarked: " + radarMarkProgress.IsAllyAerialMarked.ToString() +
+                ", IsAllySentryMarked: " + radarMarkProgress.IsAllySentryMarked.ToString());
         }
 
         private void getGameBuff(byte[] data)
