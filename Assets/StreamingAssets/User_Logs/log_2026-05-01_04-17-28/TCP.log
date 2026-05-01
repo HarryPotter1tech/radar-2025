@@ -1,0 +1,230 @@
+---TCP Log File Created: 2026-05-01 04:17:28.640 ---
+[2026-05-01 04:17:28.640]<DEBUG> [TCP]TCP bridge started at 0.0.0.0:2000
+[2026-05-01 04:17:28.641]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:18:13.261]<DEBUG> [TCP]Received data (as string): 12132e
+
+[2026-05-01 04:18:15.369]<DEBUG> [TCP]Received data (as string): 12132e
+12e32e23
+
+[2026-05-01 04:18:16.872]<DEBUG> [TCP]Received data (as string): 2e32e23
+e2e32e2e
+
+[2026-05-01 04:18:19.990]<DEBUG> [TCP]Received data (as string): 2e32e2e
+adawfawefwqrfwfq
+
+[2026-05-01 04:18:21.630]<DEBUG> [TCP]Received data (as string): wqrfwfq
+w
+
+[2026-05-01 04:18:22.842]<DEBUG> [TCP]Received data (as string): rfwfq
+w
+
+
+[2026-05-01 04:18:23.724]<DEBUG> [TCP]Received data (as string): fwfq
+w
+
+
+
+[2026-05-01 04:18:24.604]<DEBUG> [TCP]Received data (as string): wfq
+w
+
+
+
+
+[2026-05-01 04:18:25.300]<DEBUG> [TCP]Received data (as string): fq
+w
+
+
+
+
+
+[2026-05-01 04:18:26.477]<DEBUG> [TCP]Received data (as string): q
+w
+
+
+
+
+ww
+
+[2026-05-01 04:18:30.706]<DEBUG> [TCP]Received data (as string): 
+
+
+
+
+ww
+a
+
+[2026-05-01 04:18:35.235]<DEBUG> [TCP]Received data (as string): 
+
+
+ww
+a
+adqwdqwdew
+
+[2026-05-01 04:18:37.799]<DEBUG> [TCP]Received data (as string): wdqwdew
+jSCJSDVCJ
+
+[2026-05-01 04:18:47.918]<DEBUG> [TCP]Received data (as string): CJSDVCJ
+'''
+
+[2026-05-01 04:18:49.844]<DEBUG> [TCP]Received data (as string): VCJ
+'''
+
+
+[2026-05-01 04:18:50.393]<DEBUG> [TCP]Received data (as string): CJ
+'''
+
+
+
+[2026-05-01 04:18:50.654]<DEBUG> [TCP]Received data (as string): J
+'''
+
+
+
+
+[2026-05-01 04:18:50.845]<DEBUG> [TCP]Received data (as string): 
+'''
+
+
+
+
+
+[2026-05-01 04:18:51.046]<DEBUG> [TCP]Received data (as string): '''
+
+
+
+
+
+
+[2026-05-01 04:18:51.198]<DEBUG> [TCP]Received data (as string): ''
+
+
+
+
+
+
+
+[2026-05-01 04:18:51.422]<DEBUG> [TCP]Received data (as string): '
+
+
+
+
+
+
+
+
+[2026-05-01 04:18:51.862]<DEBUG> [TCP]Received data (as string): 
+
+
+
+
+
+
+
+
+
+[2026-05-01 04:18:52.011]<DEBUG> [TCP]Received data (as string): 
+
+
+
+
+
+
+
+
+
+[2026-05-01 04:18:52.462]<DEBUG> [TCP]Received data (as string): 
+
+
+
+
+
+
+
+
+
+[2026-05-01 04:18:57.428]<DEBUG> [TCP]Received data (as string): 
+
+
+
+
+
+
+
+A
+
+[2026-05-01 04:18:59.102]<DEBUG> [TCP]Received data (as string): 
+
+
+
+
+
+A
+A
+
+[2026-05-01 04:19:00.025]<DEBUG> [TCP]Received data (as string): 
+
+
+
+A
+A
+A
+
+[2026-05-01 04:19:01.014]<DEBUG> [TCP]Received data (as string): 
+
+A
+A
+A
+A
+
+[2026-05-01 04:19:01.663]<DEBUG> [TCP]Received data (as string): A
+A
+A
+A
+A
+
+[2026-05-01 04:19:41.585]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:19:55.532]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:19:57.603]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:19:58.547]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:00.617]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:02.622]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:03.559]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:04.637]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:06.613]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:09.640]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:10.555]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:15.555]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:20.562]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:22.564]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:23.561]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:29.573]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:32.572]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:38.608]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:41.565]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:47.607]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:49.594]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:52.635]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:54.621]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:20:56.591]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:21:01.571]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:21:04.574]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:21:06.640]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:21:18.568]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:21:26.559]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:21:29.533]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:21:36.547]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:21:50.539]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:21:57.534]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:22:01.531]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:22:05.602]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:22:13.540]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:22:16.556]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:22:17.546]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:22:24.544]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:22:36.589]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:22:42.539]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:22:43.545]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:22:49.524]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:22:59.549]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:23:07.539]<WARNING> [TCP]TCP sender connect warning: Connection refused
+[2026-05-01 04:23:41.574]<WARNING> [TCP]TCP sender connect warning: Connection refused

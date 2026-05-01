@@ -345,9 +345,6 @@ namespace radar.data
                         {
                             cache.Add(readBuffer[i]);
                         }
-                        string receivedString = Encoding.UTF8.GetString(cache.ToArray());
-                        // 记录日志时只输出字符串形式，避免频繁转换带来的性能问题，同时也方便调试和查看日志内容
-                        LogManager.Instance.log($"[TCP]Received data (as string): {receivedString}");
                         TryExtract0A06(cache);
                     }
                 }
