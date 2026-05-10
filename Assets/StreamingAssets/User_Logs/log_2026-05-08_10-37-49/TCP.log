@@ -1,0 +1,990 @@
+---TCP Log File Created: 2026-05-08 10:37:49.996 ---
+[2026-05-08 10:37:49.996]<DEBUG> [TCP]TCP receiver client starting, target 127.0.0.1:1400
+[2026-05-08 10:37:49.996]<DEBUG> [TCP]TCP sender server listening at 0.0.0.0:1500
+[2026-05-08 10:37:49.996]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 10:37:50.896]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 10:37:51.801]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 10:37:52.811]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 10:37:53.815]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 10:37:54.812]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 10:37:55.816]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 10:37:55.993]<DEBUG> [TCP]TCP sender accepted client.
+[2026-05-08 10:37:56.818]<DEBUG> [TCP]TCP receiver client connected to 127.0.0.1:1400
+[2026-05-08 10:37:56.818]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:56.818]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:56.818]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:56.916]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:56.916]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:56.916]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:57.017]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:57.017]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:57.018]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:57.113]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:57.113]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:57.113]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:57.218]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:57.219]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:57.219]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:57.318]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:57.318]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:57.318]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:57.412]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:57.413]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:57.413]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:57.516]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:57.516]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:57.516]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:57.614]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:57.614]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:57.614]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:57.714]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:57.714]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:57.714]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:57.815]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:57.815]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:57.815]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:57.915]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:57.916]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:57.916]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:58.017]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:58.018]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:58.018]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:58.119]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:58.120]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:58.120]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:58.219]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:58.219]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:58.219]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:58.318]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:58.318]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:58.318]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:58.416]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:58.416]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:58.416]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:58.517]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:58.517]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:58.517]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:58.622]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:58.623]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:58.623]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:58.723]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:58.723]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:58.723]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:58.823]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:58.823]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:58.823]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:58.926]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:58.926]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:58.927]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:59.018]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:59.018]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:59.018]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:59.123]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:59.123]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:59.123]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:59.222]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:59.222]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:59.222]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:59.320]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:59.320]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:59.320]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:59.424]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:59.424]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:59.424]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:59.522]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:59.523]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:59.523]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:59.620]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:59.620]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:59.620]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:59.727]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:59.727]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:59.727]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:59.821]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:59.821]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:59.821]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:37:59.919]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:37:59.919]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:37:59.919]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:00.026]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:00.026]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:00.026]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:00.126]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:00.126]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:00.126]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:00.221]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:00.221]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:00.221]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:00.326]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:00.327]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:00.327]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:00.425]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:00.426]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:00.426]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:00.520]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:00.521]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:00.521]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:00.623]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:00.623]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:00.623]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:00.725]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:00.725]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:00.726]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:00.823]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:00.823]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:00.823]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:00.925]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:00.925]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:00.926]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:01.027]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:01.027]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:01.027]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:01.128]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:01.128]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:01.128]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:01.225]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:01.225]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:01.225]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:01.327]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:01.328]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:01.328]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:01.431]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:01.431]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:01.431]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:01.528]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:01.528]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:01.528]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:01.627]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:01.627]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:01.627]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:01.725]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:01.725]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:01.725]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:01.826]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:01.826]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:01.826]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:01.928]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:01.928]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:01.928]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:02.026]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:02.026]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:02.026]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:02.124]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:02.124]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:02.125]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:02.231]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:02.231]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:02.231]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:02.336]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:02.336]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:02.336]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:02.424]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:02.424]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:02.424]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:02.525]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:02.525]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:02.525]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:02.631]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:02.631]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:02.631]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:02.727]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:02.728]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:02.728]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:02.828]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:02.828]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:02.828]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:02.931]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:02.932]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:02.932]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:03.031]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:03.032]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:03.032]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:03.127]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:03.127]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:03.127]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:03.232]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:03.232]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:03.232]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:03.333]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:03.333]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:03.334]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:03.432]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:03.432]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:03.432]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:03.532]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:03.532]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:03.532]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:03.629]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:03.629]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:03.629]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:03.730]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:03.730]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:03.730]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:03.832]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:03.832]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:03.832]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:03.934]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:03.934]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:03.934]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:04.034]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:04.034]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:04.034]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:04.134]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:04.134]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:04.134]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:04.232]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:04.233]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:04.233]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:04.331]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:04.331]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:04.331]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:04.433]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:04.433]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:04.433]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:04.536]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:04.536]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:04.536]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:04.635]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:04.635]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:04.635]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:04.736]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:04.736]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:04.736]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:04.841]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:04.841]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:04.841]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:04.935]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:04.935]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:04.935]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:05.032]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:05.032]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:05.032]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:05.136]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:05.136]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:05.137]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:05.241]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:05.242]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:05.242]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:05.336]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:05.336]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:05.337]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:05.442]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:05.443]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:05.443]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:05.538]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:05.538]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:05.538]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:05.632]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:05.633]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:05.633]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:05.735]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:05.735]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:05.735]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:05.836]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:05.836]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:05.836]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:05.936]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:05.936]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:05.936]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:06.035]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:06.035]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:06.035]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:06.137]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:06.137]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:06.137]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:06.237]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:06.237]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:06.237]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:06.337]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:06.337]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:06.337]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:06.437]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:06.438]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:06.438]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:06.542]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:06.543]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:06.543]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:06.641]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:06.641]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:06.641]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:06.740]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:06.740]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:06.740]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:06.835]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:06.835]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:06.835]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:06.935]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:06.935]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:06.935]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:07.041]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:07.041]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:07.041]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:07.136]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:07.137]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:07.137]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:07.241]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:07.241]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:07.241]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:07.341]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:07.341]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:07.341]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:07.442]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:07.442]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:07.442]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:07.537]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:07.537]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:07.537]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:07.638]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:07.638]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:07.638]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:07.742]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:07.742]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:07.742]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:07.843]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:07.843]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:07.843]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:07.944]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:07.944]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:07.944]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:08.042]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:08.043]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:08.043]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:08.140]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:08.140]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:08.140]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:08.242]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:08.243]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:08.243]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:08.342]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:08.343]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:08.343]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:08.442]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:08.442]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:08.442]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:08.542]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:08.542]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:08.542]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:08.640]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:08.640]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:08.640]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:08.743]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:08.743]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:08.743]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:08.843]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:08.843]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:08.843]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:08.943]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:08.943]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:08.943]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:09.051]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:09.052]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:09.052]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:09.143]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:09.144]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:09.144]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:09.245]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:09.245]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:09.245]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:09.344]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:09.344]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:09.344]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:09.441]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:09.442]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:09.442]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:09.547]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:09.548]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:09.548]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:09.647]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:09.647]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:09.647]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:09.745]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:09.746]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:09.746]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:09.845]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:09.845]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:09.845]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:09.944]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:09.944]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:09.944]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:10.045]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:10.045]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:10.045]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:10.144]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:10.144]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:10.144]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:10.251]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:10.251]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:10.251]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:10.345]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:10.345]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:10.345]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:10.449]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:10.450]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:10.450]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:10.545]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:10.546]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:10.546]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:10.649]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:10.649]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:10.649]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:10.747]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:10.747]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:10.747]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:10.847]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:10.847]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:10.847]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:10.947]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:10.948]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:10.948]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:11.047]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:11.047]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:11.047]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:11.151]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:11.151]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:11.151]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:11.251]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:11.251]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:11.252]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:11.347]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:11.347]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:11.347]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:11.447]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:11.447]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:11.447]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:11.547]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:11.547]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:11.547]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:11.653]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:11.653]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:11.653]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:11.749]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:11.750]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:11.750]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:11.847]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:11.848]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:11.848]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:11.947]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:11.947]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:11.947]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:12.048]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:12.048]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:12.048]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:12.148]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:12.148]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:12.148]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:12.255]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:12.255]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:12.255]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:12.355]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:12.355]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:12.355]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:12.453]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:12.453]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:12.453]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:12.555]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:12.555]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:12.555]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:12.654]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:12.655]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:12.655]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:12.753]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:12.754]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:12.754]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:12.852]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:12.852]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:12.852]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:12.950]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:12.950]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:12.951]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:13.050]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:13.050]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:13.050]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:13.157]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:13.157]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:13.157]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:13.257]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:13.257]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:13.257]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:13.356]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:13.357]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:13.357]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:13.455]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:13.456]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:13.456]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:13.557]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:13.557]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:13.557]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:13.653]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:13.653]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:13.653]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:13.752]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:13.752]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:13.752]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:13.854]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:13.855]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:13.855]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:13.957]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:13.957]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:13.957]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:14.053]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:14.053]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:14.053]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:14.156]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:14.156]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:14.156]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:14.258]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:14.258]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:14.258]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:14.354]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:14.354]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:14.355]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:14.456]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:14.456]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:14.456]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:14.559]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:14.559]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:14.559]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:14.658]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:14.658]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:14.659]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:14.756]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:14.757]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:14.757]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:14.857]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:14.857]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:14.857]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:14.957]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:14.957]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:14.957]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:15.055]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:15.055]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:15.055]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:15.157]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:15.157]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:15.157]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:15.259]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:15.260]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:15.260]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:15.361]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:15.361]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:15.361]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:15.456]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:15.456]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:15.456]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:15.557]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:15.557]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:15.558]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:15.658]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:15.659]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:15.659]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:15.761]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:15.762]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:15.762]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:15.855]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:15.856]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:15.856]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:15.957]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:15.958]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:15.958]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:16.056]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:16.056]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:16.056]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:16.166]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:16.166]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:16.167]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:16.263]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:16.263]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:16.263]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:16.364]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:16.364]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:16.364]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:16.464]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:16.465]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:16.465]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:16.565]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:16.565]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:16.565]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:16.659]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:16.660]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:16.660]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:16.766]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:16.767]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:16.767]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:16.862]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:16.863]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:16.863]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:16.959]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:16.959]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:16.959]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:17.067]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:17.067]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:17.067]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:17.160]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:17.160]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:17.160]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:17.267]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:17.268]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:17.268]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:17.366]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:17.366]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:17.367]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:17.468]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:17.468]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:17.468]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:17.564]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:17.565]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:17.565]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:17.666]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:17.666]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:17.666]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:17.767]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:17.767]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:17.767]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:17.864]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:17.864]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:17.864]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:17.968]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:17.968]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:17.968]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:18.067]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:18.067]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:18.067]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:18.167]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:18.167]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:18.167]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:18.268]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:18.268]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:18.268]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:18.369]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:18.369]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:18.369]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:18.464]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:18.464]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:18.464]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:18.567]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:18.567]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:18.567]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:18.664]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:18.664]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:18.664]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:18.768]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:18.768]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:18.768]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:18.866]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:18.866]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:18.866]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:18.972]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:18.972]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:18.972]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:19.071]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:19.071]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:19.071]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:19.169]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:19.169]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:19.169]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:19.268]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:19.269]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:19.269]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:19.367]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:19.367]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:19.367]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:19.466]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:19.466]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:19.466]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:19.573]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:19.573]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:19.573]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:19.672]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:19.672]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:19.672]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:19.769]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:19.769]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:19.769]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:19.872]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:19.872]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:19.872]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:19.966]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:19.967]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:19.967]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:20.069]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:20.070]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:20.070]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:20.166]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:20.167]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:20.167]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:20.267]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:20.268]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:20.268]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:20.373]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:20.374]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:20.374]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:20.471]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:20.471]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:20.471]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:20.571]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:20.572]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:20.572]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:20.671]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:20.671]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:20.671]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:20.773]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:20.773]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:20.773]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:20.870]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:20.870]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:20.870]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:20.973]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:20.974]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:20.974]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:21.074]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:21.074]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:21.074]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:21.179]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:21.179]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:21.180]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:21.269]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:21.269]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:21.269]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:21.374]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:21.374]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:21.374]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:21.472]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:21.472]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:21.472]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:21.571]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:21.571]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:21.571]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:21.673]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:21.673]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:21.673]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:21.770]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:21.770]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:21.770]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:21.872]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:21.872]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:21.872]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:21.972]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:21.973]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:21.973]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:22.078]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:22.078]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:22.078]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:22.172]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:22.172]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:22.172]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:22.271]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:22.272]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:22.272]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:22.376]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:22.377]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:22.377]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:22.473]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:22.473]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:22.473]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:22.578]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:22.578]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:22.578]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:22.673]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:22.673]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:22.673]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:22.778]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:22.778]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:22.778]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:22.879]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:22.879]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:22.879]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:22.973]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:22.973]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:22.973]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:23.076]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:23.076]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:23.076]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:23.173]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:23.173]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:23.173]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:23.276]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:23.276]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:23.276]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:23.375]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:23.375]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:23.375]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:23.475]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:23.475]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:23.475]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:23.582]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:23.582]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:23.582]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:23.675]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:23.675]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:23.675]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:23.778]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:23.779]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:23.779]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:23.880]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:23.880]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:23.881]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:23.979]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:23.980]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:23.980]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:24.081]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:24.082]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:24.082]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:24.178]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:24.179]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:24.179]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:24.277]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:24.277]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:24.277]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:24.381]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:24.381]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:24.381]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:24.479]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:24.480]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:24.480]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:24.581]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:24.581]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:24.581]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:24.680]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:24.681]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:24.681]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:24.783]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:24.783]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:24.783]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:24.880]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:24.880]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:24.880]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:24.981]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:24.982]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:24.982]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:25.085]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:25.085]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:25.085]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:25.178]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:25.179]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:25.179]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:25.282]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:25.282]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:25.282]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:25.400]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:25.400]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:25.400]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:25.479]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:25.479]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:25.479]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:25.582]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:25.582]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:25.582]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:25.690]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:25.690]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:25.690]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:25.782]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:25.782]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:25.782]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:25.882]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:25.882]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:25.882]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:25.986]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:25.986]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:25.986]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:26.093]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:26.093]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:26.093]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:26.187]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:26.188]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:26.188]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:26.286]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:26.287]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:26.287]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:26.388]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:26.388]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:26.388]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:26.487]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:26.487]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:26.488]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:26.588]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:26.588]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:26.588]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:26.691]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:26.691]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:26.691]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:26.791]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:26.791]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:26.791]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:26.889]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:26.890]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:26.890]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:26.991]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:26.991]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:26.991]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:27.097]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:27.097]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:27.097]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:27.186]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:27.186]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:27.187]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:27.294]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:27.294]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:27.294]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:27.394]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:27.394]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:27.394]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:27.494]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:27.494]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:27.494]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:27.588]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:27.588]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:27.588]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:27.702]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:27.702]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:27.702]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:27.791]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:27.791]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:27.791]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:27.884]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:27.884]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:27.884]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:27.991]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:27.991]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:27.991]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:28.090]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:28.090]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:28.090]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:28.188]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:28.188]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:28.188]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:28.291]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:28.291]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:28.292]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:28.396]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:28.396]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:28.397]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:28.486]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:28.486]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:28.486]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:29.283]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:29.283]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:29.283]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:29.284]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:29.284]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:29.284]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:29.284]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:29.284]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:29.284]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:29.284]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:29.284]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:29.284]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:29.284]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:29.284]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:29.284]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:29.285]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:29.285]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:29.285]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:29.285]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:29.285]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:29.285]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:29.451]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:29.451]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:29.452]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.
+[2026-05-08 10:38:29.452]<DEBUG> [TCP]TCP cache size: 35 bytes.
+[2026-05-08 10:38:29.452]<DEBUG> [TCP]TCP cache: 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 2, 0, 0, 0, 0, 0, 0
+[2026-05-08 10:38:29.452]<DEBUG> [TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.

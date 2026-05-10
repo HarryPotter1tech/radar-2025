@@ -1,0 +1,34 @@
+--- Log File Created: 2026-05-08 04:44:22.311 ---
+[2026-05-08 04:44:22.513]<DEBUG> [WebCameraHandler]Starting...
+[2026-05-08 04:44:22.514]<DEBUG> [TCP]TCP receiver client starting, target 127.0.0.1:1400
+[2026-05-08 04:44:22.514]<DEBUG> [TCP]TCP sender server listening at 0.0.0.0:1500
+[2026-05-08 04:44:22.514]<DEBUG> [Detector]Robot Inferencer initializing...
+[2026-05-08 04:44:22.514]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 04:44:22.514]<DEBUG> [Yolov8Inferencer]Model loaded: car_v8n
+[2026-05-08 04:44:22.514]<DEBUG> [Yolov8Inferencer]Model class count: 1
+[2026-05-08 04:44:22.514]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 04:44:22.515]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 04:44:22.515]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 04:44:22.515]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 04:44:22.515]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 04:44:22.515]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 04:44:22.515]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 04:44:22.515]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 04:44:22.515]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 04:44:22.515]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 04:44:22.515]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 04:44:22.515]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 04:44:22.515]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 04:44:22.515]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 04:44:22.515]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 04:44:22.515]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 04:44:22.516]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 04:44:22.516]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 04:44:22.516]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 04:44:22.516]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 04:44:22.516]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 04:44:22.516]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 04:44:22.516]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 04:44:22.516]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 04:44:22.516]<DEBUG> [Detector]initialized.
+[2026-05-08 04:44:23.449]<WARNING> [TCP]TCP receiver connect warning: Connection refused

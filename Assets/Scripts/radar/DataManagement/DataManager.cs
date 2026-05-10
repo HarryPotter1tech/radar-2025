@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 using radar.data;
 using System;
-using System.Text;
+using System.Diagnostics;
 using Unity.VisualScripting;
 using System.Collections.Concurrent;
 using radar.serial.package;
@@ -19,6 +20,8 @@ namespace radar.data
 {
     public class DataManager : MonoBehaviour
     {
+        private const string DefaultPythonExecutable = "python3";
+        private const string DefaultPythonScriptPath = "/home/pinkpanda/linux-RADAR/RADAR-2026/RADAR-SDR/thread_init.py";
         public static DataManager Instance
         {
             get
@@ -48,19 +51,31 @@ namespace radar.data
         private bool isDataUpdated_ = false;
         private int doubleDebuffActivedTimes = 0;
         private ushort lastRadarMarkProgress_ = ushort.MaxValue;
-        [Header("TCP receiver settings")]
+        [Header("TCP receiver (client) settings")]
         public bool enableTcpBridge = true;
-        public int tcpListenPort = 2000;
-        [Header("TCP sender settings")]
+        public string tcpReceiveHost = "127.0.0.1";
+        public int tcpReceivePort = 1400;
+        [Header("TCP sender (server) settings")]
         public bool enableTcpSend = true;
-        public string tcpSendHost = "192.168.1.10";
-        public int tcpSendPort = 2001;
-        private TcpListener tcpListener_;
+        public int tcpSendListenPort = 1500;
+        [Header("TCP reconnect settings")]
+        public int tcpReconnectDelayMs = 100;
+        [Header("Python process settings")]
+        public bool enablePythonBridge = true;
+        public string pythonExecutable = DefaultPythonExecutable;
+        public string pythonScriptPath = DefaultPythonScriptPath;
+        public string pythonExtraArgs = "";
         private Thread tcpReceiveThread_;
-        private volatile bool tcpRunning_;
+        private Thread tcpSendAcceptThread_;
+        private volatile bool tcpReceiveRunning_;
+        private volatile bool tcpSendRunning_;
+        private TcpClient tcpReceiveClient_;
+        private NetworkStream tcpReceiveStream_;
+        private TcpListener tcpSendListener_;
         private TcpClient tcpSendClient_;
         private NetworkStream tcpSendStream_;
         private readonly object tcpSendLock_ = new();
+        private Process pythonProcess_;
         private readonly object radarDecisionLock_ = new();
         private readonly byte[] radarDecisionSuffix_ = new byte[7];
         private bool hasRadarDecisionSuffix_ = false;
@@ -147,10 +162,10 @@ namespace radar.data
         {
             if (!SerialHandler.Instance.isConnected) return;
             RadarDecisionCmd0121 decisionData;
-            if(stateData_.radarInfo.DoubleDebuffChances > 0&&!stateData_.radarInfo.IsDoubleDebuffAble)
+            if (stateData_.radarInfo.DoubleDebuffChances > 0 && !stateData_.radarInfo.IsDoubleDebuffAble)
             {
                 doubleDebuffActivedTimes++;//只有当雷达拥有双倍易伤机会但对方未被触发双倍易伤时，才增加已触发次数
-                if(doubleDebuffActivedTimes >= 2)
+                if (doubleDebuffActivedTimes >= 2)
                 {
                     doubleDebuffActivedTimes = 2;//雷达最多只能触发两次双倍易伤
                 }
@@ -203,62 +218,104 @@ namespace radar.data
         private void StartTcpReceiver()
         {
             if (!enableTcpBridge) return;
-            try
+            tcpReceiveRunning_ = true;
+            tcpReceiveThread_ = new Thread(TcpReceiveLoop)
             {
-                tcpListener_ = new TcpListener(IPAddress.Any, tcpListenPort);
-                tcpListener_.Start();
-                tcpRunning_ = true;
-                tcpReceiveThread_ = new Thread(TcpReceiveLoop)
-                {
-                    IsBackground = true
-                };
-                tcpReceiveThread_.Start();
-                LogManager.Instance.log($"[TCP]TCP bridge started at 0.0.0.0:{tcpListenPort}");
-            }
-            catch (Exception ex)
-            {
-                tcpRunning_ = false;
-                LogManager.Instance.log($"[TCP]Failed to start TCP bridge: {ex}");
-            }
+                IsBackground = true
+            };
+            tcpReceiveThread_.Start();
+            LogManager.Instance.log($"[TCP]TCP receiver client starting, target {tcpReceiveHost}:{tcpReceivePort}");
         }
 
         private void StartTcpSender()
         {
             if (!enableTcpSend) return;
-            TryConnectTcpSender();
-        }
-
-        private void TryConnectTcpSender()
-        {
-            lock (tcpSendLock_)
+            try
             {
-                if (tcpSendClient_ != null && tcpSendClient_.Connected) return;
-                try
+                tcpSendListener_ = new TcpListener(IPAddress.Any, tcpSendListenPort);
+                tcpSendListener_.Start();
+                tcpSendRunning_ = true;
+                tcpSendAcceptThread_ = new Thread(TcpSendAcceptLoop)
                 {
-                    tcpSendClient_?.Close();
-                    tcpSendClient_ = new TcpClient();
-                    tcpSendClient_.Connect(tcpSendHost, tcpSendPort);
-                    tcpSendStream_ = tcpSendClient_.GetStream();
-                    LogManager.Instance.log($"[TCP]TCP sender connected to {tcpSendHost}:{tcpSendPort}");
-                }
-                catch (Exception ex)
-                {
-                    tcpSendStream_ = null;
-                    LogManager.Instance.warning($"[TCP]TCP sender connect warning: {ex.Message}");
-                }
+                    IsBackground = true
+                };
+                tcpSendAcceptThread_.Start();
+                LogManager.Instance.log($"[TCP]TCP sender server listening at 0.0.0.0:{tcpSendListenPort}");
+            }
+            catch (Exception ex)
+            {
+                tcpSendRunning_ = false;
+                LogManager.Instance.warning($"[TCP]Failed to start TCP sender server: {ex}");
             }
         }
 
-        public void SendTcpMessage(string message)
+        public void StartPythonProcess()
         {
-            if (!enableTcpSend || string.IsNullOrEmpty(message)) return;
-            TryConnectTcpSender();
+            if (!enablePythonBridge) return;
+            if (pythonProcess_ != null && !pythonProcess_.HasExited) return;
+            string resolvedExecutable = string.IsNullOrWhiteSpace(pythonExecutable)
+                ? DefaultPythonExecutable
+                : pythonExecutable;
+            string resolvedScriptPath = string.IsNullOrWhiteSpace(pythonScriptPath)
+                ? DefaultPythonScriptPath
+                : pythonScriptPath;
+
+            string enemySideText = stateData_.gameState.EnemySide == Team.Blue ? "Blue" : "Red";
+            string args = $"\"{resolvedScriptPath}\" --enemySide \"{enemySideText}\"";
+            if (!string.IsNullOrWhiteSpace(pythonExtraArgs))
+                args += " " + pythonExtraArgs;
+
+            LogManager.Instance.log($"[Python]Launching with enemySide={enemySideText}");
+            LogManager.Instance.log($"[Python]Script: {resolvedScriptPath}");
+
+            ProcessStartInfo startInfo = new()
+            {
+                FileName = resolvedExecutable,
+                Arguments = args,
+                UseShellExecute = false,
+                CreateNoWindow = true
+            };
+
+            try
+            {
+                pythonProcess_ = Process.Start(startInfo);
+                LogManager.Instance.log($"[Python]Started: {resolvedExecutable} {args}");
+            }
+            catch (Exception ex)
+            {
+                LogManager.Instance.warning($"[Python]Start failed: {ex.Message}");
+            }
+        }
+
+        private void StopPythonProcess()
+        {
+            if (pythonProcess_ == null) return;
+            try
+            {
+                if (!pythonProcess_.HasExited)
+                {
+                    pythonProcess_.Kill();
+                    pythonProcess_.WaitForExit(1000);
+                }
+            }
+            catch (Exception ex)
+            {
+                LogManager.Instance.warning($"[Python]Stop warning: {ex.Message}");
+            }
+            finally
+            {
+                pythonProcess_ = null;
+            }
+        }
+
+        public void SendTcpBytes(byte[] payload)
+        {
+            if (!enableTcpSend || payload == null || payload.Length == 0) return;
             lock (tcpSendLock_)
             {
                 if (tcpSendStream_ == null || !tcpSendClient_.Connected) return;
                 try
                 {
-                    byte[] payload = Encoding.UTF8.GetBytes(message);
                     tcpSendStream_.Write(payload, 0, payload.Length);
                     LogManager.Instance.log($"[TCP]TCP sender wrote {payload.Length} bytes.");
                 }
@@ -271,24 +328,21 @@ namespace radar.data
 
         public void SendRadarInfoToTcp(int encryptionRank, bool isModifyKeyAble)
         {
-            string payload = $"RadarInfo,EncryptionRank={encryptionRank},IsModifyKeyAble={(isModifyKeyAble ? 1 : 0)}\n";
-            SendTcpMessage(payload);
+            byte[] payload =
+            {
+                0x02,
+                0x0E,
+                (byte)encryptionRank,
+                (byte)(isModifyKeyAble ? 1 : 0),
+            };
+            SendTcpBytes(payload);
             lastSentEncryptionRank_ = encryptionRank;
             lastSentIsModifyKeyAble_ = isModifyKeyAble;
         }
 
         private void StopTcpReceiver()
         {
-            tcpRunning_ = false;
-            try
-            {
-                tcpListener_?.Stop();
-            }
-            catch (Exception ex)
-            {
-                LogManager.Instance.warning($"[TCP]Stop TCP listener warning: {ex.Message}");
-            }
-
+            tcpReceiveRunning_ = false;
             try
             {
                 if (tcpReceiveThread_ != null && tcpReceiveThread_.IsAlive)
@@ -298,88 +352,190 @@ namespace radar.data
             }
             catch (Exception ex)
             {
-                LogManager.Instance.warning($"[TCP]Join TCP thread warning: {ex.Message}");
+                LogManager.Instance.warning($"[TCP]Join receiver thread warning: {ex.Message}");
             }
 
+            CloseTcpReceiveConnection();
+
             tcpReceiveThread_ = null;
-            tcpListener_ = null;
+        }
+
+        private void CloseTcpReceiveConnection()
+        {
+            lock (tcpSendLock_)
+            {
+                tcpReceiveStream_?.Close();
+                tcpReceiveClient_?.Close();
+                tcpReceiveStream_ = null;
+                tcpReceiveClient_ = null;
+            }
         }
 
         private void TcpReceiveLoop()
         {
-            while (tcpRunning_)
+            byte[] readBuffer = new byte[64];
+            List<byte> cache = new();
+            while (tcpReceiveRunning_)
             {
                 try
                 {
-                    if (tcpListener_ == null)
+                    if (tcpReceiveClient_ == null || !tcpReceiveClient_.Connected)
                     {
-                        Thread.Sleep(20);
-                        continue;
-                    }
-                    if (!tcpListener_.Pending())
-                    {
-                        Thread.Sleep(5);
-                        continue;
-                    }
+                        CloseTcpReceiveConnection();
 
-                    using TcpClient client = tcpListener_.AcceptTcpClient();
-                    client.ReceiveTimeout = 500;
-                    NetworkStream stream = client.GetStream();
-                    byte[] readBuffer = new byte[1024];
-                    List<byte> cache = new();
-
-                    while (tcpRunning_ && client.Connected)
-                    {
-                        int readLen;
                         try
                         {
-                            readLen = stream.Read(readBuffer, 0, readBuffer.Length);
+                            TcpClient client = new TcpClient();
+                            client.Connect(tcpReceiveHost, tcpReceivePort);
+                            client.ReceiveTimeout = 1000;
+                            lock (tcpSendLock_)
+                            {
+                                tcpReceiveClient_ = client;
+                                tcpReceiveStream_ = client.GetStream();
+                                tcpReceiveStream_.ReadTimeout = 1000;
+                            }
+                            LogManager.Instance.log($"[TCP]TCP receiver client connected to {tcpReceiveHost}:{tcpReceivePort}");
                         }
-                        catch (IOException)
+                        catch (Exception ex)
                         {
+                            LogManager.Instance.warning($"[TCP]TCP receiver connect warning: {ex.Message}");
+                            Thread.Sleep(tcpReconnectDelayMs);
                             continue;
                         }
-
-                        if (readLen <= 0) break;
-                        for (int i = 0; i < readLen; i++)
-                        {
-                            cache.Add(readBuffer[i]);
-                        }
-                        TryExtract0A06(cache);
                     }
+
+                    NetworkStream stream;
+                    lock (tcpSendLock_)
+                    {
+                        stream = tcpReceiveStream_;
+                    }
+                    if (stream == null)
+                    {
+                        Thread.Sleep(tcpReconnectDelayMs);
+                        continue;
+                    }
+
+                    int readLen;
+                    try
+                    {
+                        readLen = stream.Read(readBuffer, 0, readBuffer.Length);
+                    }
+                    catch (IOException ex) when (ex.InnerException is SocketException socketEx
+                                                 && socketEx.SocketErrorCode == SocketError.TimedOut)
+                    {
+                        continue;
+                    }
+                    catch (IOException)
+                    {
+                        CloseTcpReceiveConnection();
+                        Thread.Sleep(tcpReconnectDelayMs);
+                        continue;
+                    }
+
+                    if (readLen <= 0)
+                    {
+                        CloseTcpReceiveConnection();
+                        Thread.Sleep(tcpReconnectDelayMs);
+                        continue;
+                    }
+
+                    for (int i = 0; i < readLen; i++)
+                    {
+                        cache.Add(readBuffer[i]);
+                    }
+                    //LogManager.Instance.log($"[TCP]TCP cache size: {cache.Count} bytes.");
+                    //LogManager.Instance.log($"[TCP]TCP cache: {string.Join(", ", cache)}");
+                    TryExtract0A06(cache);
                 }
                 catch (SocketException)
                 {
-                    if (!tcpRunning_) break;
+                    if (!tcpReceiveRunning_) break;
+                    Thread.Sleep(tcpReconnectDelayMs);
                 }
                 catch (Exception ex)
                 {
                     LogManager.Instance.warning($"[TCP]TCP receive warning: {ex.Message}");
+                    Thread.Sleep(tcpReconnectDelayMs);
+                }
+            }
+        }
+
+        private void TcpSendAcceptLoop()
+        {
+            while (tcpSendRunning_)
+            {
+                try
+                {
+                    if (tcpSendListener_ == null)
+                    {
+                        Thread.Sleep(50);
+                        continue;
+                    }
+
+                    if (!tcpSendListener_.Pending())
+                    {
+                        Thread.Sleep(20);
+                        continue;
+                    }
+
+                    TcpClient client = tcpSendListener_.AcceptTcpClient();
+                    client.SendTimeout = 500;
+                    lock (tcpSendLock_)
+                    {
+                        tcpSendStream_?.Close();
+                        tcpSendClient_?.Close();
+                        tcpSendClient_ = client;
+                        tcpSendStream_ = client.GetStream();
+                    }
+                    LogManager.Instance.log("[TCP]TCP sender accepted client.");
+                }
+                catch (SocketException)
+                {
+                    if (!tcpSendRunning_) break;
+                    Thread.Sleep(tcpReconnectDelayMs);
+                }
+                catch (Exception ex)
+                {
+                    LogManager.Instance.warning($"[TCP]TCP sender accept warning: {ex.Message}");
+                    Thread.Sleep(tcpReconnectDelayMs);
                 }
             }
         }
 
         private void TryExtract0A06(List<byte> cache)
         {
-            // 从TCP字节流中查找0x0A06命令（小端序匹配06 0A），并提取其后7字节。
+            // 从TCP字节流中按帧查找0x0A05 + 24字节位置 + 0x0A06 + 7字节密码。
+            const int PositionBytes = 24;
+            const int DecisionBytes = 7;
+            const int FrameBytes = 2 + PositionBytes + 2 + DecisionBytes;
             int index = 0;
-            while (cache.Count - index >= 9)
+            while (cache.Count - index >= 2)
             {
-                if (cache[index] == 0x06 && cache[index + 1] == 0x0A)
+                if (cache[index] == 0x0A && cache[index + 1] == 0x05)
                 {
-                    lock (radarDecisionLock_)
+                    if (cache.Count - index < FrameBytes)
                     {
-                        for (int i = 0; i < 7; i++)
-                        {
-                            radarDecisionSuffix_[i] = cache[index + 2 + i];
-                        }
-                        hasRadarDecisionSuffix_ = true;
-                        pendingDecisionCmdCount_++;// 每收到一个0x0A06命令，就增加一次待发送的雷达决策命令计数，确保每个决策命令都能携带最新的密码后缀  
+                        break;
                     }
-                    LogManager.Instance.log("[TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.");
-                    cache.RemoveRange(0, index + 9);
-                    index = 0;
-                    continue;
+
+                    int decisionIndex = index + 2 + PositionBytes;
+                    if (cache[decisionIndex] == 0x0A && cache[decisionIndex + 1] == 0x06)
+                    {
+                        lock (radarDecisionLock_)
+                        {
+                            for (int i = 0; i < DecisionBytes; i++)
+                            {
+                                radarDecisionSuffix_[i] = cache[decisionIndex + 2 + i];
+                            }
+                            hasRadarDecisionSuffix_ = true;
+                            pendingDecisionCmdCount_++;// 每收到一个0x0A06命令，就增加一次待发送的雷达决策命令计数，确保每个决策命令都能携带最新的密码后缀
+                        }
+                        LogManager.Instance.log("[TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.");
+                        LogManager.Instance.log($"[TCP]New decision suffix: {string.Join(", ", radarDecisionSuffix_)}");
+                        cache.RemoveRange(0, index + FrameBytes);
+                        index = 0;
+                        continue;
+                    }
                 }
                 index++;
             }
@@ -474,7 +630,30 @@ namespace radar.data
         }
         private void OnDestroy()
         {
+            StopPythonProcess();
             StopTcpReceiver();
+            tcpSendRunning_ = false;
+            try
+            {
+                tcpSendListener_?.Stop();
+            }
+            catch (Exception ex)
+            {
+                LogManager.Instance.warning($"[TCP]Stop sender listener warning: {ex.Message}");
+            }
+
+            try
+            {
+                if (tcpSendAcceptThread_ != null && tcpSendAcceptThread_.IsAlive)
+                {
+                    tcpSendAcceptThread_.Join(300);
+                }
+            }
+            catch (Exception ex)
+            {
+                LogManager.Instance.warning($"[TCP]Join sender thread warning: {ex.Message}");
+            }
+
             lock (tcpSendLock_)
             {
                 tcpSendStream_?.Close();
@@ -482,6 +661,8 @@ namespace radar.data
                 tcpSendStream_ = null;
                 tcpSendClient_ = null;
             }
+            tcpSendAcceptThread_ = null;
+            tcpSendListener_ = null;
             instance_ = null;
         }
     }

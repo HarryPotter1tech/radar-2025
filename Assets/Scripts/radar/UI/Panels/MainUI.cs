@@ -202,12 +202,15 @@ namespace radar.ui.panel
         public Transform SwitchButtonViewRoot;
         public Button CallibrationButton;
         public Button IOButton;
+        public Button PythonButton;
 
         public SwitchButtonViewType(Transform rootTransform)
         {
             SwitchButtonViewRoot = rootTransform.Find("SwitchButtonView");
             CallibrationButton = rootTransform.Find("SwitchButtonView/CallibrationButton").GetComponent<Button>();
             IOButton = rootTransform.Find("SwitchButtonView/IOButton").GetComponent<Button>();
+
+            EnsurePythonButton();
 
             CallibrationButton.onClick.AddListener(() =>
             {
@@ -218,6 +221,71 @@ namespace radar.ui.panel
             IOButton.onClick.AddListener(() =>
             {
                 UIManager.ShowPanel<IOHandleUI>();
+            });
+        }
+
+        private void EnsurePythonButton()
+        {
+            if (SwitchButtonViewRoot == null || CallibrationButton == null)
+                return;
+            if (SwitchButtonViewRoot.Find("PythonButton") != null)
+            {
+                PythonButton = SwitchButtonViewRoot.Find("PythonButton").GetComponent<Button>();
+                return;
+            }
+
+            GameObject buttonObject = new("PythonButton", typeof(RectTransform), typeof(Image), typeof(Button));
+            buttonObject.transform.SetParent(SwitchButtonViewRoot, false);
+
+            RectTransform rectTransform = buttonObject.GetComponent<RectTransform>();
+            RectTransform calibrationRect = CallibrationButton.GetComponent<RectTransform>();
+            Image calibrationImage = CallibrationButton.GetComponent<Image>();
+
+            rectTransform.anchorMin = calibrationRect.anchorMin;
+            rectTransform.anchorMax = calibrationRect.anchorMax;
+            rectTransform.pivot = calibrationRect.pivot;
+
+            Vector2 size = calibrationRect.rect.size;
+            if (size.x <= 0f || size.y <= 0f)
+                size = calibrationRect.sizeDelta;
+            if (size.x <= 0f || size.y <= 0f)
+                size = new Vector2(160f, 48f);
+
+            float gap = 10f;
+            rectTransform.sizeDelta = calibrationRect.sizeDelta;
+            rectTransform.anchoredPosition = calibrationRect.anchoredPosition;
+            rectTransform.offsetMin = calibrationRect.offsetMin + new Vector2(size.x + gap, 0f);
+            rectTransform.offsetMax = calibrationRect.offsetMax + new Vector2(size.x + gap, 0f);
+
+            Image image = buttonObject.GetComponent<Image>();
+            if (calibrationImage != null)
+            {
+                image.sprite = calibrationImage.sprite;
+                image.type = calibrationImage.type;
+                image.preserveAspect = calibrationImage.preserveAspect;
+            }
+            image.color = new Color(0.15f, 0.35f, 0.9f, 0.95f);
+
+            GameObject textObject = new("Text", typeof(RectTransform), typeof(TextMeshProUGUI));
+            textObject.transform.SetParent(buttonObject.transform, false);
+
+            RectTransform textRect = textObject.GetComponent<RectTransform>();
+            textRect.anchorMin = Vector2.zero;
+            textRect.anchorMax = Vector2.one;
+            textRect.offsetMin = Vector2.zero;
+            textRect.offsetMax = Vector2.zero;
+
+            TextMeshProUGUI text = textObject.GetComponent<TextMeshProUGUI>();
+            text.text = "Python";
+            text.fontSize = 22f;
+            text.alignment = TextAlignmentOptions.Center;
+            text.color = Color.white;
+            text.font = TMP_Settings.defaultFontAsset;
+
+            PythonButton = buttonObject.GetComponent<Button>();
+            PythonButton.onClick.AddListener(() =>
+            {
+                DataManager.Instance.StartPythonProcess();
             });
         }
 

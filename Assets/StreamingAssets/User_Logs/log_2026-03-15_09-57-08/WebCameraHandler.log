@@ -1,8 +1,0 @@
----WebCameraHandler Log File Created: 2026-03-15 09:57:17.484 ---
-[2026-03-15 09:57:17.484]<DEBUG> [WebCameraHandler]Camera devices scanned: 5 devices found.
-[2026-03-15 09:57:17.484]<DEBUG> [WebCameraHandler]--- Camera device 0: UGREEN 95348: UGREEN 95348 (/dev/video0)
-[2026-03-15 09:57:17.484]<DEBUG> [WebCameraHandler]--- Camera device 1: UGREEN 95348: UGREEN 95348 (/dev/video1)
-[2026-03-15 09:57:17.484]<DEBUG> [WebCameraHandler]--- Camera device 2: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video2)
-[2026-03-15 09:57:17.484]<DEBUG> [WebCameraHandler]--- Camera device 3: USB2.0 FHD UVC WebCam: USB2.0 F (/dev/video3)
-[2026-03-15 09:57:17.484]<DEBUG> [WebCameraHandler]--- Camera device 4: VirtualCamera (/dev/video4)
-[2026-03-15 09:57:21.333]<DEBUG> [WebCameraHandler]VirtualCamera (/dev/video4) opened successfully.

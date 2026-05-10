@@ -1,0 +1,157 @@
+--- Log File Created: 2026-05-08 06:12:29.899 ---
+[2026-05-08 06:12:30.098]<DEBUG> [WebCameraHandler]Starting...
+[2026-05-08 06:12:30.099]<DEBUG> [TCP]TCP receiver client starting, target 127.0.0.1:1400
+[2026-05-08 06:12:30.099]<DEBUG> [TCP]TCP sender server listening at 0.0.0.0:1500
+[2026-05-08 06:12:30.099]<DEBUG> [Detector]Robot Inferencer initializing...
+[2026-05-08 06:12:30.100]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:30.100]<DEBUG> [Yolov8Inferencer]Model loaded: car_v8n
+[2026-05-08 06:12:30.100]<DEBUG> [Yolov8Inferencer]Model class count: 1
+[2026-05-08 06:12:30.100]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 06:12:30.100]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 06:12:30.100]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 06:12:30.100]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 06:12:30.100]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 06:12:30.101]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 06:12:30.101]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 06:12:30.101]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 06:12:30.101]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 06:12:30.101]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 06:12:30.101]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 06:12:30.101]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 06:12:30.101]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 06:12:30.101]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 06:12:30.101]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 06:12:30.101]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 06:12:30.101]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 06:12:30.101]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 06:12:30.102]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 06:12:30.102]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 06:12:30.102]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 06:12:30.102]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 06:12:30.102]<DEBUG> [Yolov8Inferencer]Model loaded: armor_v8n
+[2026-05-08 06:12:30.102]<DEBUG> [Yolov8Inferencer]Model class count: 12
+[2026-05-08 06:12:30.102]<DEBUG> [Detector]initialized.
+[2026-05-08 06:12:31.221]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:31.926]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:32.931]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:33.929]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:34.931]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:35.931]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:36.935]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:37.933]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:38.930]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:39.948]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:40.928]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:41.943]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:42.938]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:43.941]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:44.933]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:45.930]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:46.936]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:47.939]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:48.932]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:49.941]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:50.935]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:51.949]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:52.941]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:53.940]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:54.943]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:55.937]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:56.936]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:57.935]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:58.949]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:12:59.935]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:00.943]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:01.935]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:02.939]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:03.939]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:04.938]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:05.936]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:06.935]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:07.937]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:08.944]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:09.945]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:10.941]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:11.939]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:13.024]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:13.939]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:14.945]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:15.948]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:17.012]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:17.940]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:18.951]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:19.949]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:20.943]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:21.940]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:22.943]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:23.948]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:24.944]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:25.940]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:26.948]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:27.951]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:28.941]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:29.944]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:30.962]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:31.950]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:32.947]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:33.957]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:34.953]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:35.944]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:36.948]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:38.690]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:38.945]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:39.945]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:40.944]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:41.948]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:42.948]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:43.954]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:44.945]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:45.947]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:46.960]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:47.958]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:48.948]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:49.946]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:50.947]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:51.951]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:52.953]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:53.952]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:55.004]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:55.954]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:56.966]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:57.954]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:58.951]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:13:59.955]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:00.959]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:01.980]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:02.955]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:03.954]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:04.959]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:05.954]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:06.954]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:07.972]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:08.963]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:09.963]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:10.956]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:11.960]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:12.957]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:13.953]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:14.955]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:15.955]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:16.965]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:17.971]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:18.971]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:19.959]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:20.961]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:21.959]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:22.977]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:23.960]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:24.955]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:25.960]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:26.965]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:27.964]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:28.957]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:29.975]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:30.969]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:31.962]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:32.957]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 06:14:33.964]<WARNING> [TCP]TCP receiver connect warning: Connection refused

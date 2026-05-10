@@ -1,0 +1,11 @@
+---SerialHandler Log File Created: 2026-05-08 02:56:58.752 ---
+[2026-05-08 02:56:58.752]<DEBUG> [SerialHandler]Serial port closed.
+[2026-05-08 02:56:58.752]<DEBUG> [SerialHandler]Serial port opened: /dev/ttyACM0
+[2026-05-08 03:02:30.637]<DEBUG> [SerialHandler]Serial port closed.
+[2026-05-08 03:02:30.637]<DEBUG> [SerialHandler]Serial port opened: /dev/ttyACM0
+[2026-05-08 03:02:31.139]<DEBUG> [SerialHandler]Serial port closed.
+[2026-05-08 03:02:31.139]<DEBUG> [SerialHandler]Serial port opened: /dev/ttyACM0
+[2026-05-08 03:02:31.572]<DEBUG> [SerialHandler]Serial port closed.
+[2026-05-08 03:02:31.573]<DEBUG> [SerialHandler]Serial port opened: /dev/ttyACM0
+[2026-05-08 03:03:10.281]<DEBUG> [SerialHandler]Serial port closed.
+[2026-05-08 03:03:10.281]<DEBUG> [SerialHandler]Serial port opened: /dev/ttyACM0

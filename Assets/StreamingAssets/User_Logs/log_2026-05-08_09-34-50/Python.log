@@ -1,0 +1,4 @@
+---Python Log File Created: 2026-05-08 09:34:58.659 ---
+[2026-05-08 09:34:58.659]<DEBUG> [Python]Launching with enemySide=Blue
+[2026-05-08 09:34:58.660]<DEBUG> [Python]Script: /home/pinkpanda/linux-RADAR/RADAR-2026/RADAR-SDR/thread_init.py
+[2026-05-08 09:34:58.660]<DEBUG> [Python]Started: python3 "/home/pinkpanda/linux-RADAR/RADAR-2026/RADAR-SDR/thread_init.py" --enemySide "Blue"

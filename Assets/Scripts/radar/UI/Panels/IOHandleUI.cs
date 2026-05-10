@@ -39,6 +39,7 @@ namespace radar.ui.panel
         WebCameraViewType WebCameraView;
 
         Button SwitchToMainButton;
+        Button StartPythonButton;
         serial.SerialHandler SerialHandler;
         public override void Initialize()
         {
@@ -47,11 +48,81 @@ namespace radar.ui.panel
             InitialCOMView();
             InitialWebCameraView();
 
+            EnsurePythonButton();
+
             SwitchToMainButton = IOHandlePanelCanvasRoot.transform.Find("SwitchToMainButton").GetComponent<Button>();
             SwitchToMainButton.onClick.AddListener(() =>
             {
                 UIManager.HidePanel<IOHandleUI>();
             });
+
+            Transform pythonButtonTransform = IOHandlePanelCanvasRoot.transform.Find("PythonButton");
+            if (pythonButtonTransform != null)
+            {
+                StartPythonButton = pythonButtonTransform.GetComponent<Button>();
+                StartPythonButton.onClick.AddListener(() =>
+                {
+                    DataManager.Instance.StartPythonProcess();
+                });
+            }
+            else
+            {
+                LogManager.Instance.warning("[IOHandleUI]PythonButton not found.");
+            }
+        }
+
+        private void EnsurePythonButton()
+        {
+            if (IOHandlePanelCanvasRoot.transform.Find("PythonButton") != null)
+                return;
+
+            GameObject buttonObject = new("PythonButton", typeof(RectTransform), typeof(Image), typeof(Button));
+            buttonObject.transform.SetParent(IOHandlePanelCanvasRoot.transform, false);
+
+            RectTransform rectTransform = buttonObject.GetComponent<RectTransform>();
+            RectTransform webCameraRect = WebCameraView.WebCameraViewRoot as RectTransform;
+            if (webCameraRect != null)
+            {
+                rectTransform.anchorMin = webCameraRect.anchorMin;
+                rectTransform.anchorMax = webCameraRect.anchorMax;
+                rectTransform.pivot = webCameraRect.pivot;
+
+                Vector2 size = webCameraRect.sizeDelta;
+                if (size.x <= 0f || size.y <= 0f)
+                    size = webCameraRect.rect.size;
+                if (size.x <= 0f || size.y <= 0f)
+                    size = new Vector2(200f, 48f);
+
+                rectTransform.sizeDelta = size;
+                rectTransform.anchoredPosition = webCameraRect.anchoredPosition + new Vector2(size.x + 20f, 0f);
+            }
+            else
+            {
+                rectTransform.anchorMin = new Vector2(0f, 1f);
+                rectTransform.anchorMax = new Vector2(0f, 1f);
+                rectTransform.pivot = new Vector2(0f, 1f);
+                rectTransform.sizeDelta = new Vector2(200f, 48f);
+                rectTransform.anchoredPosition = new Vector2(20f, -20f);
+            }
+
+            Image image = buttonObject.GetComponent<Image>();
+            image.color = new Color(0.15f, 0.35f, 0.9f, 0.95f);
+
+            GameObject textObject = new("Text", typeof(RectTransform), typeof(TextMeshProUGUI));
+            textObject.transform.SetParent(buttonObject.transform, false);
+
+            RectTransform textRect = textObject.GetComponent<RectTransform>();
+            textRect.anchorMin = Vector2.zero;
+            textRect.anchorMax = Vector2.one;
+            textRect.offsetMin = Vector2.zero;
+            textRect.offsetMax = Vector2.zero;
+
+            TextMeshProUGUI text = textObject.GetComponent<TextMeshProUGUI>();
+            text.text = "Start Python";
+            text.fontSize = 22f;
+            text.alignment = TextAlignmentOptions.Center;
+            text.color = Color.white;
+            text.font = TMP_Settings.defaultFontAsset;
         }
         private void InitialCOMView()
         {
@@ -170,9 +241,13 @@ namespace radar.ui.panel
                     try
                     {
                         if (WebCameraHandler.Instance.OpenCamera(cameraName))
+                        {
                             WebCameraView.Info.text = "已连接到 " + cameraName;
+                        }
                         else
+                        {
                             WebCameraView.Info.text = "连接失败";
+                        }
                     }
                     catch (System.Exception e)
                     {

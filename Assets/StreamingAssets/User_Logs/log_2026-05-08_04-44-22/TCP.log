@@ -1,0 +1,5 @@
+---TCP Log File Created: 2026-05-08 04:44:22.514 ---
+[2026-05-08 04:44:22.514]<DEBUG> [TCP]TCP receiver client starting, target 127.0.0.1:1400
+[2026-05-08 04:44:22.514]<DEBUG> [TCP]TCP sender server listening at 0.0.0.0:1500
+[2026-05-08 04:44:22.514]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-08 04:44:23.449]<WARNING> [TCP]TCP receiver connect warning: Connection refused
