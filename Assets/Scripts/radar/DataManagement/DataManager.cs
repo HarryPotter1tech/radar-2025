@@ -609,23 +609,15 @@ namespace radar.data
                 }
                 index++;
             }
-
-            if (index > 0)
-            {
-                cache.RemoveRange(0, index);
-            }
-            if (cache.Count > 256)
-            {
-                cache.RemoveRange(0, cache.Count - 256);
-            }
         }
 
         private void TryExtractSignalInfo(List<byte> cache)
         {
-            // 从TCP字节流中按帧查找0x0A07 + 24字节位置 + 6字节血量 + 5字节防御增益。
-            const int SignalInfoBytes = 35;
+            // 从TCP字节流中按帧查找0x0A07 + 24字节位置 + 5字节血量 + 5字节防御增益。
+            const int SignalInfoBytes = 34;
             const int FrameBytes = 2 + SignalInfoBytes;
             int index = 0;
+           
             while (cache.Count - index >= 2)
             {
                 if (cache[index] == 0x0A && cache[index + 1] == 0x07)
@@ -634,64 +626,36 @@ namespace radar.data
                     {
                         break;
                     }
-
-                    int offset = index + 2;
-                    short ReadInt16(int offsetIndex)
-                    {
-                        return (short)((cache[offsetIndex] << 8) | cache[offsetIndex + 1]);
-                    }
-
-                    Vector2 hero = new(ReadInt16(offset), ReadInt16(offset + 2));
-                    Vector2 engineer = new(ReadInt16(offset + 4), ReadInt16(offset + 6));
-                    Vector2 infantry3 = new(ReadInt16(offset + 8), ReadInt16(offset + 10));
-                    Vector2 infantry4 = new(ReadInt16(offset + 12), ReadInt16(offset + 14));
-                    Vector2 drone = new(ReadInt16(offset + 16), ReadInt16(offset + 18));
-                    Vector2 sentry = new(ReadInt16(offset + 20), ReadInt16(offset + 22));
-
-                    int hpOffset = offset + 24;
-                    byte heroHp = cache[hpOffset];
-                    byte engineerHp = cache[hpOffset + 1];
-                    byte infantry3Hp = cache[hpOffset + 2];
-                    byte infantry4Hp = cache[hpOffset + 3];
-                    byte droneHp = cache[hpOffset + 4];
-                    byte sentryHp = cache[hpOffset + 5];
-                    int defenseOffset = hpOffset + 6;
-                    byte heroDefense = cache[defenseOffset];
-                    byte engineerDefense = cache[defenseOffset + 1];
-                    byte infantry3Defense = cache[defenseOffset + 2];
-                    byte infantry4Defense = cache[defenseOffset + 3];
-                    byte sentryDefense = cache[defenseOffset + 4];
-
-                    stateData_.gnuradioSignalInfo.HeroPositionX = (int)hero.x;
-                    stateData_.gnuradioSignalInfo.HeroPositionY = (int)hero.y;
-                    stateData_.gnuradioSignalInfo.EngineerPositionX = (int)engineer.x;
-                    stateData_.gnuradioSignalInfo.EngineerPositionY = (int)engineer.y;
-                    stateData_.gnuradioSignalInfo.Infantry3PositionX = (int)infantry3.x;
-                    stateData_.gnuradioSignalInfo.Infantry3PositionY = (int)infantry3.y;
-                    stateData_.gnuradioSignalInfo.Infantry4PositionX = (int)infantry4.x;
-                    stateData_.gnuradioSignalInfo.Infantry4PositionY = (int)infantry4.y;
-                    stateData_.gnuradioSignalInfo.DronePositionX = (int)drone.x;
-                    stateData_.gnuradioSignalInfo.DronePositionY = (int)drone.y;
-                    stateData_.gnuradioSignalInfo.SentryPositionX = (int)sentry.x;
-                    stateData_.gnuradioSignalInfo.SentryPositionY = (int)sentry.y;
-                    stateData_.gnuradioSignalInfo.HeroHp = heroHp;
-                    stateData_.gnuradioSignalInfo.EngineerHp = engineerHp;
-                    stateData_.gnuradioSignalInfo.Infantry3Hp = infantry3Hp;
-                    stateData_.gnuradioSignalInfo.Infantry4Hp = infantry4Hp;
-                    stateData_.gnuradioSignalInfo.SentryHp = sentryHp;
-                    stateData_.gnuradioSignalInfo.HeroDefenseGain = heroDefense;
-                    stateData_.gnuradioSignalInfo.EngineerDefenseGain = engineerDefense;
-                    stateData_.gnuradioSignalInfo.Infantry3DefenseGain = infantry3Defense;
-                    stateData_.gnuradioSignalInfo.Infantry4DefenseGain = infantry4Defense;
-                    stateData_.gnuradioSignalInfo.SentryDefenseGain = sentryDefense;
+                    stateData_.gnuradioSignalInfo.HeroPositionX = (int)cache[index + 2] << 8 | cache[index + 3];
+                    stateData_.gnuradioSignalInfo.HeroPositionY = (int)cache[index + 4] << 8 | cache[index + 5];
+                    stateData_.gnuradioSignalInfo.EngineerPositionX = (int)cache[index + 6] << 8 | cache[index + 7];
+                    stateData_.gnuradioSignalInfo.EngineerPositionY = (int)cache[index + 8] << 8 | cache[index + 9];
+                    stateData_.gnuradioSignalInfo.Infantry3PositionX = (int)cache[index + 10] << 8 | cache[index + 11];
+                    stateData_.gnuradioSignalInfo.Infantry3PositionY = (int)cache[index + 12] << 8 | cache[index + 13];
+                    stateData_.gnuradioSignalInfo.Infantry4PositionX = (int)cache[index + 14] << 8 | cache[index + 15];
+                    stateData_.gnuradioSignalInfo.Infantry4PositionY = (int)cache[index + 16] << 8 | cache[index + 17];
+                    stateData_.gnuradioSignalInfo.DronePositionX = (int)cache[index + 18] << 8 | cache[index + 19];
+                    stateData_.gnuradioSignalInfo.DronePositionY = (int)cache[index + 20] << 8 | cache[index + 21];
+                    stateData_.gnuradioSignalInfo.SentryPositionX = (int)cache[index + 22] << 8 | cache[index + 23];
+                    stateData_.gnuradioSignalInfo.SentryPositionY = (int)cache[index + 24] << 8 | cache[index + 25];
+                    stateData_.gnuradioSignalInfo.HeroHp = cache[index + 26];
+                    stateData_.gnuradioSignalInfo.EngineerHp = cache[index + 27];
+                    stateData_.gnuradioSignalInfo.Infantry3Hp = cache[index + 28];
+                    stateData_.gnuradioSignalInfo.Infantry4Hp = cache[index + 29];
+                    stateData_.gnuradioSignalInfo.SentryHp = cache[index + 30];
+                    stateData_.gnuradioSignalInfo.HeroDefenseGain = cache[index + 31];
+                    stateData_.gnuradioSignalInfo.EngineerDefenseGain = cache[index + 32];
+                    stateData_.gnuradioSignalInfo.Infantry3DefenseGain = cache[index + 33];
+                    stateData_.gnuradioSignalInfo.Infantry4DefenseGain = cache[index + 34];
+                    stateData_.gnuradioSignalInfo.SentryDefenseGain = cache[index + 35];
                     LogManager.Instance.log("[TCP]TCP 0x0A07 parsed, updated signal info.");
                     LogManager.Instance.log($"[TCP]New signal info: " +
-                        $"Hero: ({hero.x}, {hero.y}, HP: {heroHp}, DefGain: {heroDefense}), " +
-                        $"Engineer: ({engineer.x}, {engineer.y}, HP: {engineerHp}, DefGain: {engineerDefense}), " +
-                        $"Infantry3: ({infantry3.x}, {infantry3.y}, HP: {infantry3Hp}, DefGain: {infantry3Defense}), " +
-                        $"Infantry4: ({infantry4.x}, {infantry4.y}, HP: {infantry4Hp}, DefGain: {infantry4Defense}), " +
-                        $"Drone: ({drone.x}, {drone.y}, HP: {droneHp}), " +
-                        $"Sentry: ({sentry.x}, {sentry.y}, HP: {sentryHp}, DefGain: {sentryDefense})");
+                        $"Hero: ({stateData_.gnuradioSignalInfo.HeroPositionX}, {stateData_.gnuradioSignalInfo.HeroPositionY}, HP: {stateData_.gnuradioSignalInfo.HeroHp}, DefGain: {stateData_.gnuradioSignalInfo.HeroDefenseGain}), " +
+                        $"Engineer: ({stateData_.gnuradioSignalInfo.EngineerPositionX}, {stateData_.gnuradioSignalInfo.EngineerPositionY}, HP: {stateData_.gnuradioSignalInfo.EngineerHp}, DefGain: {stateData_.gnuradioSignalInfo.EngineerDefenseGain}), " +
+                        $"Infantry3: ({stateData_.gnuradioSignalInfo.Infantry3PositionX}, {stateData_.gnuradioSignalInfo.Infantry3PositionY}, HP: {stateData_.gnuradioSignalInfo.Infantry3Hp}, DefGain: {stateData_.gnuradioSignalInfo.Infantry3DefenseGain}), " +
+                        $"Infantry4: ({stateData_.gnuradioSignalInfo.Infantry4PositionX}, {stateData_.gnuradioSignalInfo.Infantry4PositionY}, HP: {stateData_.gnuradioSignalInfo.Infantry4Hp}, DefGain: {stateData_.gnuradioSignalInfo.Infantry4DefenseGain}), " +
+                        $"Drone: ({stateData_.gnuradioSignalInfo.DronePositionX}, {stateData_.gnuradioSignalInfo.DronePositionY}), " +
+                        $"Sentry: ({stateData_.gnuradioSignalInfo.SentryPositionX}, {stateData_.gnuradioSignalInfo.SentryPositionY}, HP: {stateData_.gnuradioSignalInfo.SentryHp}, DefGain: {stateData_.gnuradioSignalInfo.SentryDefenseGain})");
                     cache.RemoveRange(0, index + FrameBytes);
                     index = 0;
                     continue;
