@@ -1,0 +1,22 @@
+---TCP Log File Created: 2026-05-15 07:58:13.713 ---
+[2026-05-15 07:58:13.712]<DEBUG> [TCP]TCP receiver client starting, target 127.0.0.1:1400
+[2026-05-15 07:58:13.713]<DEBUG> [TCP]TCP sender server listening at 0.0.0.0:1500
+[2026-05-15 07:58:13.713]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-15 07:58:14.596]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-15 07:58:15.567]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-15 07:58:16.562]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-15 07:58:17.566]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-15 07:58:18.568]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-15 07:58:19.564]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-15 07:58:20.567]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-15 07:58:21.570]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-15 07:58:22.567]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-15 07:58:23.568]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-15 07:58:24.569]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-15 07:58:25.570]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-15 07:58:26.569]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-15 07:58:27.572]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-15 07:58:28.573]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-15 07:58:29.566]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-15 07:58:30.566]<WARNING> [TCP]TCP receiver connect warning: Connection refused
+[2026-05-15 07:58:31.752]<WARNING> [TCP]TCP receiver connect warning: Connection refused

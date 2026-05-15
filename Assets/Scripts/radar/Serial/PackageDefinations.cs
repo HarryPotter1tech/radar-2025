@@ -63,7 +63,7 @@ namespace radar.serial.package
         public ushort BlueOutpost;
         public ushort BlueBase;
     }
-/*
+    /*
         CMD: 0x0121 雷达自主决策指令 data，长度 8 bytes
         byte0: radar_cmd，雷达确认触发双倍易伤计数（开局0，合法增量+1，最大2）
         byte1: password_cmd，密钥相关命令字节
@@ -82,6 +82,58 @@ namespace radar.serial.package
         public byte password_6;
     }
 
+    /*
+        CMD: 0x0200 最多112 bytes 多机通信数据，固定以 10Hz 频率发送
+        byte0-1: hero_position_x 英雄x位置
+        byte2-3: hero_position_y 英雄y位置
+        byte4-5: engineer_position_x 工程x位置
+        byte6-7: engineer_position_y 工程y位置
+        byte8-9: soldier3_position_x 步兵3x位置
+        byte10-11: soldier3_position_y 步兵3y位置
+        byte12-13: soldier4_position_x 步兵4x位置
+        byte14-15: soldier4_position_y 步兵4y位置
+        byte16-17: drone_position_x 无人机x位置
+        byte18-19: drone_position_y 无人机y位置
+        byte20-21: sentry_position_x 哨兵x位置
+        byte22-23: sentry_position_y 哨兵y位置
+        byte24: hero_hp 英雄血量
+        byte25: engineer_hp 工程血量
+        byte26: soldier3_hp 步兵3血量
+        byte27: soldier4_hp 步兵4血量
+        byte28: drone_hp 无人机血量
+        byte29: sentry_hp 哨兵血量
+        byte30: hero_defense_gain 英雄防御增益
+        byte31: engineer_defense_gain 工程防御增益
+        byte32: soldier3_defense_gain 步兵3防御增益
+        byte33: soldier4_defense_gain 步兵4防御增益
+        byte34: sentry_defense_gain 哨兵防御增益
+    */
+    [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential, Pack = 1)]
+    public struct MultiRobotCommData0200
+    {
+        public ushort HeroPositionX;
+        public ushort HeroPositionY;
+        public ushort EngineerPositionX;
+        public ushort EngineerPositionY;
+        public ushort Soldier3PositionX;
+        public ushort Soldier3PositionY;
+        public ushort Soldier4PositionX;
+        public ushort Soldier4PositionY;
+        public ushort DronePositionX;
+        public ushort DronePositionY;
+        public ushort SentryPositionX;
+        public ushort SentryPositionY;
+        public byte HeroHp;
+        public byte EngineerHp;
+        public byte Soldier3Hp;
+        public byte Soldier4Hp;
+        public byte SentryHp;
+        public byte HeroDefenseGain;
+        public byte EngineerDefenseGain;
+        public byte Soldier3DefenseGain;
+        public byte Soldier4DefenseGain;
+        public byte SentryDefenseGain;
+    }
     [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential, Pack = 1)]
     public struct RobotInteraction_Radar
     {
@@ -89,6 +141,15 @@ namespace radar.serial.package
         public ushort senderId;
         public ushort receiverId;
         public RadarDecisionCmd0121 data;
+    }
+
+    [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential, Pack = 1)]
+    public struct RobotInteraction_MultiRobot
+    {
+        public ushort dataCmdId;
+        public ushort senderId;
+        public ushort receiverId;
+        public MultiRobotCommData0200 data;
     }
 
     /*

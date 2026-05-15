@@ -109,7 +109,10 @@ namespace radar.data
 
             // Send data at the specified frequency
             if (Time.frameCount % Mathf.RoundToInt(60f / sendFrequencyHz) == 0)
+            {
                 SendRobotPositionData();
+                SendSignalInfoCmd();
+            }
 
             if (pendingDecisionCmdCount_ > 0)
                 SendDoubleDebuffCmd();
@@ -215,6 +218,69 @@ namespace radar.data
             return data;
         }
 
+        private void SendSignalInfoCmd()
+        {
+            if (!SerialHandler.Instance.isConnected) return;
+            MultiRobotCommData0200 signalData;
+            signalData = buildSignalData();
+            RobotInteraction_MultiRobot robotInteractionData = new()
+            {
+                dataCmdId = 0x0200,
+                senderId = (ushort)(Instance.stateData.gameState.EnemySide == Team.Blue ? 9 : 109),
+                receiverId =(ushort)(Instance.stateData.gameState.EnemySide == Team.Blue ? 107 : 7),
+                data = signalData
+            };
+            byte[] dataToSend = new byte[Marshal.SizeOf(typeof(RobotInteraction_MultiRobot))];
+            IntPtr ptr = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(RobotInteraction_MultiRobot)));
+            Marshal.StructureToPtr(robotInteractionData, ptr, true);
+            Marshal.Copy(ptr, dataToSend, 0, Marshal.SizeOf(typeof(RobotInteraction_MultiRobot)));
+            Marshal.FreeHGlobal(ptr);
+
+            SerialHandler.Instance.SendData(0x0301, dataToSend);
+            LogManager.Instance.log(
+                $"[DataManager]Send multirobot command: " +
+                $"Hero_position: ({signalData.HeroPositionX}, {signalData.HeroPositionY}), " +
+                $"Engineer_position: ({signalData.EngineerPositionX}, {signalData.EngineerPositionY}), " +
+                $"Soldier3_position: ({signalData.Soldier3PositionX}, {signalData.Soldier3PositionY}), " +
+                $"Soldier4_position: ({signalData.Soldier4PositionX}, {signalData.Soldier4PositionY}), " +
+                $"Drone_position: ({signalData.DronePositionX}, {signalData.DronePositionY}), " +
+                $"Sentry_position: ({signalData.SentryPositionX}, {signalData.SentryPositionY}), " +
+                $"Hero_HP: {signalData.HeroHp}, Engineer_HP: {signalData.EngineerHp}, Soldier3_HP: {signalData.Soldier3Hp}, Soldier4_HP: {signalData.Soldier4Hp}, Sentry_HP: {signalData.SentryHp}, " +
+                $"Hero_defense_gain: {signalData.HeroDefenseGain}, Engineer_defense_gain: {signalData.EngineerDefenseGain}, Soldier3_defense_gain: {signalData.Soldier3DefenseGain}, Soldier4_defense_gain: {signalData.Soldier4DefenseGain}, Sentry_defense_gain: {signalData.SentryDefenseGain}"
+            );
+        }
+        private MultiRobotCommData0200 buildSignalData()
+        {
+            GnuradioSignalInfo signalInfo = stateData_.gnuradioSignalInfo;
+
+            MultiRobotCommData0200 data = new()
+            {
+                HeroPositionX = (ushort)Mathf.Clamp(signalInfo.HeroPositionX, 0, ushort.MaxValue),
+                HeroPositionY = (ushort)Mathf.Clamp(signalInfo.HeroPositionY, 0, ushort.MaxValue),
+                EngineerPositionX = (ushort)Mathf.Clamp(signalInfo.EngineerPositionX, 0, ushort.MaxValue),
+                EngineerPositionY = (ushort)Mathf.Clamp(signalInfo.EngineerPositionY, 0, ushort.MaxValue),
+                Soldier3PositionX = (ushort)Mathf.Clamp(signalInfo.Infantry3PositionX, 0, ushort.MaxValue),
+                Soldier3PositionY = (ushort)Mathf.Clamp(signalInfo.Infantry3PositionY, 0, ushort.MaxValue),
+                Soldier4PositionX = (ushort)Mathf.Clamp(signalInfo.Infantry4PositionX, 0, ushort.MaxValue),
+                Soldier4PositionY = (ushort)Mathf.Clamp(signalInfo.Infantry4PositionY, 0, ushort.MaxValue),
+                DronePositionX = (ushort)Mathf.Clamp(signalInfo.DronePositionX, 0, ushort.MaxValue),
+                DronePositionY = (ushort)Mathf.Clamp(signalInfo.DronePositionY, 0, ushort.MaxValue),
+                SentryPositionX = (ushort)Mathf.Clamp(signalInfo.SentryPositionX, 0, ushort.MaxValue),
+                SentryPositionY = (ushort)Mathf.Clamp(signalInfo.SentryPositionY, 0, ushort.MaxValue),
+                HeroHp = (byte)Mathf.Clamp(signalInfo.HeroHp, 0, byte.MaxValue),
+                EngineerHp = (byte)Mathf.Clamp(signalInfo.EngineerHp, 0, byte.MaxValue),
+                Soldier3Hp = (byte)Mathf.Clamp(signalInfo.Infantry3Hp, 0, byte.MaxValue),
+                Soldier4Hp = (byte)Mathf.Clamp(signalInfo.Infantry4Hp, 0, byte.MaxValue),
+                SentryHp = (byte)Mathf.Clamp(signalInfo.SentryHp, 0, byte.MaxValue),
+                HeroDefenseGain = (byte)Mathf.Clamp(signalInfo.HeroDefenseGain, 0, byte.MaxValue),
+                EngineerDefenseGain = (byte)Mathf.Clamp(signalInfo.EngineerDefenseGain, 0, byte.MaxValue),
+                Soldier3DefenseGain = (byte)Mathf.Clamp(signalInfo.Infantry3DefenseGain, 0, byte.MaxValue),
+                Soldier4DefenseGain = (byte)Mathf.Clamp(signalInfo.Infantry4DefenseGain, 0, byte.MaxValue),
+                SentryDefenseGain = (byte)Mathf.Clamp(signalInfo.SentryDefenseGain, 0, byte.MaxValue)
+            };
+
+            return data;
+        }
         private void StartTcpReceiver()
         {
             if (!enableTcpBridge) return;
@@ -445,7 +511,8 @@ namespace radar.data
                     }
                     //LogManager.Instance.log($"[TCP]TCP cache size: {cache.Count} bytes.");
                     //LogManager.Instance.log($"[TCP]TCP cache: {string.Join(", ", cache)}");
-                    TryExtract0A06(cache);
+                    TryExtractNoiseKey(cache);
+                    TryExtractSignalInfo(cache);
                 }
                 catch (SocketException)
                 {
@@ -502,40 +569,132 @@ namespace radar.data
             }
         }
 
-        private void TryExtract0A06(List<byte> cache)
+        private void TryExtractNoiseKey(List<byte> cache)
         {
-            // 从TCP字节流中按帧查找0x0A05 + 24字节位置 + 0x0A06 + 7字节密码。
-            const int PositionBytes = 24;
+            // 从TCP字节流中按帧查找0x0A06 + 7字节密码。
             const int DecisionBytes = 7;
-            const int FrameBytes = 2 + PositionBytes + 2 + DecisionBytes;
+            const int FrameBytes = 2 + DecisionBytes;
             int index = 0;
             while (cache.Count - index >= 2)
             {
-                if (cache[index] == 0x0A && cache[index + 1] == 0x05)
+                if (cache[index] == 0x0A && cache[index + 1] == 0x06)
                 {
                     if (cache.Count - index < FrameBytes)
                     {
                         break;
                     }
 
-                    int decisionIndex = index + 2 + PositionBytes;
-                    if (cache[decisionIndex] == 0x0A && cache[decisionIndex + 1] == 0x06)
+                    lock (radarDecisionLock_)
                     {
-                        lock (radarDecisionLock_)
+                        for (int i = 0; i < DecisionBytes; i++)
                         {
-                            for (int i = 0; i < DecisionBytes; i++)
-                            {
-                                radarDecisionSuffix_[i] = cache[decisionIndex + 2 + i];
-                            }
-                            hasRadarDecisionSuffix_ = true;
-                            pendingDecisionCmdCount_++;// 每收到一个0x0A06命令，就增加一次待发送的雷达决策命令计数，确保每个决策命令都能携带最新的密码后缀
+                            radarDecisionSuffix_[i] = cache[index + 2 + i];
                         }
-                        LogManager.Instance.log("[TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.");
-                        LogManager.Instance.log($"[TCP]New decision suffix: {string.Join(", ", radarDecisionSuffix_)}");
-                        cache.RemoveRange(0, index + FrameBytes);
-                        index = 0;
-                        continue;
+                        hasRadarDecisionSuffix_ = true;
+                        pendingDecisionCmdCount_++;// 每收到一个0x0A06命令，就增加一次待发送的雷达决策命令计数，确保每个决策命令都能携带最新的密码后缀
                     }
+                    stateData_.gnuradioNoiseKey.Behavior = radarDecisionSuffix_[0];
+                    stateData_.gnuradioNoiseKey.Key1 = radarDecisionSuffix_[1];
+                    stateData_.gnuradioNoiseKey.Key2 = radarDecisionSuffix_[2];
+                    stateData_.gnuradioNoiseKey.Key3 = radarDecisionSuffix_[3];
+                    stateData_.gnuradioNoiseKey.Key4 = radarDecisionSuffix_[4];
+                    stateData_.gnuradioNoiseKey.Key5 = radarDecisionSuffix_[5];
+                    stateData_.gnuradioNoiseKey.Key6 = radarDecisionSuffix_[6];
+                    LogManager.Instance.log("[TCP]TCP 0x0A06 parsed, updated 7-byte decision suffix.");
+                    LogManager.Instance.log($"[TCP]New decision suffix: {string.Join(", ", radarDecisionSuffix_)}");
+
+                    cache.RemoveRange(0, index + FrameBytes);
+                    index = 0;
+                    continue;
+                }
+                index++;
+            }
+
+            if (index > 0)
+            {
+                cache.RemoveRange(0, index);
+            }
+            if (cache.Count > 256)
+            {
+                cache.RemoveRange(0, cache.Count - 256);
+            }
+        }
+
+        private void TryExtractSignalInfo(List<byte> cache)
+        {
+            // 从TCP字节流中按帧查找0x0A07 + 24字节位置 + 6字节血量 + 5字节防御增益。
+            const int SignalInfoBytes = 35;
+            const int FrameBytes = 2 + SignalInfoBytes;
+            int index = 0;
+            while (cache.Count - index >= 2)
+            {
+                if (cache[index] == 0x0A && cache[index + 1] == 0x07)
+                {
+                    if (cache.Count - index < FrameBytes)
+                    {
+                        break;
+                    }
+
+                    int offset = index + 2;
+                    short ReadInt16(int offsetIndex)
+                    {
+                        return (short)((cache[offsetIndex] << 8) | cache[offsetIndex + 1]);
+                    }
+
+                    Vector2 hero = new(ReadInt16(offset), ReadInt16(offset + 2));
+                    Vector2 engineer = new(ReadInt16(offset + 4), ReadInt16(offset + 6));
+                    Vector2 infantry3 = new(ReadInt16(offset + 8), ReadInt16(offset + 10));
+                    Vector2 infantry4 = new(ReadInt16(offset + 12), ReadInt16(offset + 14));
+                    Vector2 drone = new(ReadInt16(offset + 16), ReadInt16(offset + 18));
+                    Vector2 sentry = new(ReadInt16(offset + 20), ReadInt16(offset + 22));
+
+                    int hpOffset = offset + 24;
+                    byte heroHp = cache[hpOffset];
+                    byte engineerHp = cache[hpOffset + 1];
+                    byte infantry3Hp = cache[hpOffset + 2];
+                    byte infantry4Hp = cache[hpOffset + 3];
+                    byte droneHp = cache[hpOffset + 4];
+                    byte sentryHp = cache[hpOffset + 5];
+                    int defenseOffset = hpOffset + 6;
+                    byte heroDefense = cache[defenseOffset];
+                    byte engineerDefense = cache[defenseOffset + 1];
+                    byte infantry3Defense = cache[defenseOffset + 2];
+                    byte infantry4Defense = cache[defenseOffset + 3];
+                    byte sentryDefense = cache[defenseOffset + 4];
+
+                    stateData_.gnuradioSignalInfo.HeroPositionX = (int)hero.x;
+                    stateData_.gnuradioSignalInfo.HeroPositionY = (int)hero.y;
+                    stateData_.gnuradioSignalInfo.EngineerPositionX = (int)engineer.x;
+                    stateData_.gnuradioSignalInfo.EngineerPositionY = (int)engineer.y;
+                    stateData_.gnuradioSignalInfo.Infantry3PositionX = (int)infantry3.x;
+                    stateData_.gnuradioSignalInfo.Infantry3PositionY = (int)infantry3.y;
+                    stateData_.gnuradioSignalInfo.Infantry4PositionX = (int)infantry4.x;
+                    stateData_.gnuradioSignalInfo.Infantry4PositionY = (int)infantry4.y;
+                    stateData_.gnuradioSignalInfo.DronePositionX = (int)drone.x;
+                    stateData_.gnuradioSignalInfo.DronePositionY = (int)drone.y;
+                    stateData_.gnuradioSignalInfo.SentryPositionX = (int)sentry.x;
+                    stateData_.gnuradioSignalInfo.SentryPositionY = (int)sentry.y;
+                    stateData_.gnuradioSignalInfo.HeroHp = heroHp;
+                    stateData_.gnuradioSignalInfo.EngineerHp = engineerHp;
+                    stateData_.gnuradioSignalInfo.Infantry3Hp = infantry3Hp;
+                    stateData_.gnuradioSignalInfo.Infantry4Hp = infantry4Hp;
+                    stateData_.gnuradioSignalInfo.SentryHp = sentryHp;
+                    stateData_.gnuradioSignalInfo.HeroDefenseGain = heroDefense;
+                    stateData_.gnuradioSignalInfo.EngineerDefenseGain = engineerDefense;
+                    stateData_.gnuradioSignalInfo.Infantry3DefenseGain = infantry3Defense;
+                    stateData_.gnuradioSignalInfo.Infantry4DefenseGain = infantry4Defense;
+                    stateData_.gnuradioSignalInfo.SentryDefenseGain = sentryDefense;
+                    LogManager.Instance.log("[TCP]TCP 0x0A07 parsed, updated signal info.");
+                    LogManager.Instance.log($"[TCP]New signal info: " +
+                        $"Hero: ({hero.x}, {hero.y}, HP: {heroHp}, DefGain: {heroDefense}), " +
+                        $"Engineer: ({engineer.x}, {engineer.y}, HP: {engineerHp}, DefGain: {engineerDefense}), " +
+                        $"Infantry3: ({infantry3.x}, {infantry3.y}, HP: {infantry3Hp}, DefGain: {infantry3Defense}), " +
+                        $"Infantry4: ({infantry4.x}, {infantry4.y}, HP: {infantry4Hp}, DefGain: {infantry4Defense}), " +
+                        $"Drone: ({drone.x}, {drone.y}, HP: {droneHp}), " +
+                        $"Sentry: ({sentry.x}, {sentry.y}, HP: {sentryHp}, DefGain: {sentryDefense})");
+                    cache.RemoveRange(0, index + FrameBytes);
+                    index = 0;
+                    continue;
                 }
                 index++;
             }

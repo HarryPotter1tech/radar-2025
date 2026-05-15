@@ -137,6 +137,43 @@ namespace radar.data
         public bool IsAllyAerialMarked;
         public bool IsAllySentryMarked;
     }
+
+    public class GnuradioSignalInfo
+    {
+        public int HeroPositionX;
+        public int HeroPositionY;   
+        public int EngineerPositionX;
+        public int EngineerPositionY;   
+        public int Infantry3PositionX;
+        public int Infantry3PositionY;
+        public int Infantry4PositionX;
+        public int Infantry4PositionY;
+        public int DronePositionX;
+        public int DronePositionY;
+        public int SentryPositionX;
+        public int SentryPositionY;
+        public int HeroHp;
+        public int EngineerHp;
+        public int Infantry3Hp;
+        public int Infantry4Hp;
+        public int SentryHp;
+        public int HeroDefenseGain;
+        public int EngineerDefenseGain;
+        public int Infantry3DefenseGain;
+        public int Infantry4DefenseGain;
+        public int SentryDefenseGain;
+    }
+
+    public class GnuradioNoiseKey
+    {
+        public int Behavior;
+        public int Key1;
+        public int Key2;
+        public int Key3;
+        public int Key4;
+        public int Key5;
+        public int Key6;
+    }
     public class StateDatas
     {
         public RobotSets enemyRobots;
@@ -146,6 +183,8 @@ namespace radar.data
         public RadarInfo radarInfo;
         public RadarMarkProgress radarMarkProgress;
         public GameState gameState;
+        public GnuradioSignalInfo gnuradioSignalInfo;
+        public GnuradioNoiseKey gnuradioNoiseKey;
 
         public StateDatas()
         {
@@ -156,6 +195,8 @@ namespace radar.data
             gameState = new GameState { GameStage = GameStage.NotStarted, GameTimeSeconds = 0, GameCount = 0, EnemySide = Team.Blue };
             radarInfo = new RadarInfo { DoubleDebuffChances = 0, IsDoubleDebuffAble = false, EncryptionRank = 0, IsModifyKeyAble = false };
             radarMarkProgress = new RadarMarkProgress { IsOpponentHeroDebuffed = false, IsOpponentEngineerDebuffed = false, IsOpponentInfantry3Debuffed = false, IsOpponentInfantry4Debuffed = false, IsOpponentAerialMarked = false, IsOpponentSentryDebuffed = false, IsAllyHeroMarked = false, IsAllyEngineerMarked = false, IsAllyInfantry3Marked = false, IsAllyInfantry4Marked = false, IsAllyAerialMarked = false, IsAllySentryMarked = false };
+            gnuradioSignalInfo = new GnuradioSignalInfo();
+            gnuradioNoiseKey = new GnuradioNoiseKey();
         }
     }
 }

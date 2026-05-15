@@ -276,7 +276,7 @@ namespace radar.ui.panel
             textRect.offsetMax = Vector2.zero;
 
             TextMeshProUGUI text = textObject.GetComponent<TextMeshProUGUI>();
-            text.text = "Python";
+            text.text = "Start SDR";
             text.fontSize = 22f;
             text.alignment = TextAlignmentOptions.Center;
             text.color = Color.white;
