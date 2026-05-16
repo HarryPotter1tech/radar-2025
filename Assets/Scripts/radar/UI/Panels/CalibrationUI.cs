@@ -24,6 +24,9 @@ namespace radar.ui.panel
         public Button closeInfoButton;
         public GameObject targetIndicatorPrefab_;
         public TextMeshProUGUI CallibrationText;
+        public Slider focalLengthSlider;
+        public TMP_InputField focalLengthInput;
+        public TextMeshProUGUI focalLengthText;
     };
     public class CalibrationUI : Panel
     {
@@ -79,6 +82,7 @@ namespace radar.ui.panel
                 currentCamera_.transform.Find("Canvas/InputImage").GetComponent<RawImage>().color = new Color(1, 1, 1, value);
             });
             CalibrationView_.CameraView.texture = WebCameraHandler.Instance.selectedCamera_.cameraTexture_;
+            CreateFocalLengthSlider();
             setCameraViewEnabled(false);
             GetWorldPoint();
 
@@ -89,7 +93,193 @@ namespace radar.ui.panel
             if (WebCameraHandler.Instance.selectedCamera_ == null) return;
             CalibrationView_.CameraView.texture = WebCameraHandler.Instance.selectedCamera_.cameraTexture_;
             currentCamera_ = WebCameraHandler.Instance.selectedCamera_.raycastCamera_;
+            if (CalibrationView_.focalLengthSlider != null && currentCamera_ != null)
+            {
+                CalibrationView_.focalLengthSlider.value = currentCamera_.focalLength;
+                CalibrationView_.focalLengthInput.text = currentCamera_.focalLength.ToString("F1");
+            }
         }
+
+        private void CreateFocalLengthSlider()
+        {
+            Transform calibRoot = CalibrationView_.CallibrationViewRoot;
+            float initFocalLength = currentCamera_ != null ? currentCamera_.focalLength : 18f;
+
+            // --- Label text ---
+            GameObject labelObj = new("FocalLengthLabel");
+            labelObj.layer = 5;
+            RectTransform labelRect = labelObj.AddComponent<RectTransform>();
+            labelRect.SetParent(calibRoot, false);
+            labelRect.anchorMin = new Vector2(1, 1);
+            labelRect.anchorMax = new Vector2(1, 1);
+            labelRect.pivot = new Vector2(1, 0.5f);
+            labelRect.anchoredPosition = new Vector2(-10, -20);
+            labelRect.sizeDelta = new Vector2(100, 22);
+            CalibrationView_.focalLengthText = labelObj.AddComponent<TextMeshProUGUI>();
+            CalibrationView_.focalLengthText.text = "Focal (mm)";
+            CalibrationView_.focalLengthText.fontSize = 14;
+            CalibrationView_.focalLengthText.color = Color.white;
+            CalibrationView_.focalLengthText.alignment = TMPro.TextAlignmentOptions.Right;
+            var font = Resources.Load<TMPro.TMP_FontAsset>("Fonts & Materials/PingFang-SC-Bold SDF");
+            if (font != null)
+                CalibrationView_.focalLengthText.font = font;
+
+            // --- Input field for numeric entry ---
+            GameObject inputObj = new("FocalLengthInput");
+            inputObj.layer = 5;
+            RectTransform inputRect = inputObj.AddComponent<RectTransform>();
+            inputRect.SetParent(calibRoot, false);
+            inputRect.anchorMin = new Vector2(1, 1);
+            inputRect.anchorMax = new Vector2(1, 1);
+            inputRect.pivot = new Vector2(1, 0.5f);
+            inputRect.anchoredPosition = new Vector2(-10, -45);
+            inputRect.sizeDelta = new Vector2(80, 28);
+
+            // Input background
+            Image inputBg = inputObj.AddComponent<Image>();
+            inputBg.color = new Color(0.15f, 0.15f, 0.15f, 0.8f);
+
+            // Text area
+            GameObject textAreaObj = new("Text Area");
+            textAreaObj.layer = 5;
+            RectTransform textAreaRect = textAreaObj.AddComponent<RectTransform>();
+            textAreaRect.SetParent(inputRect, false);
+            textAreaRect.anchorMin = Vector2.zero;
+            textAreaRect.anchorMax = Vector2.one;
+            textAreaRect.offsetMin = new Vector2(4, 2);
+            textAreaRect.offsetMax = new Vector2(-4, -2);
+
+            // Placeholder
+            GameObject placeholderObj = new("Placeholder");
+            placeholderObj.layer = 5;
+            RectTransform placeholderRect = placeholderObj.AddComponent<RectTransform>();
+            placeholderRect.SetParent(textAreaRect, false);
+            placeholderRect.anchorMin = Vector2.zero;
+            placeholderRect.anchorMax = Vector2.one;
+            placeholderRect.sizeDelta = Vector2.zero;
+            TextMeshProUGUI placeholderText = placeholderObj.AddComponent<TextMeshProUGUI>();
+            placeholderText.text = initFocalLength.ToString("F1");
+            placeholderText.fontSize = 14;
+            placeholderText.color = new Color(0.5f, 0.5f, 0.5f, 0.8f);
+            placeholderText.alignment = TMPro.TextAlignmentOptions.Center;
+            if (font != null)
+                placeholderText.font = font;
+
+            // Input text
+            GameObject textObj = new("Text");
+            textObj.layer = 5;
+            RectTransform textRect = textObj.AddComponent<RectTransform>();
+            textRect.SetParent(textAreaRect, false);
+            textRect.anchorMin = Vector2.zero;
+            textRect.anchorMax = Vector2.one;
+            textRect.sizeDelta = Vector2.zero;
+            TextMeshProUGUI inputText = textObj.AddComponent<TextMeshProUGUI>();
+            inputText.fontSize = 14;
+            inputText.color = Color.white;
+            inputText.alignment = TMPro.TextAlignmentOptions.Center;
+            if (font != null)
+                inputText.font = font;
+
+            CalibrationView_.focalLengthInput = inputObj.AddComponent<TMP_InputField>();
+            CalibrationView_.focalLengthInput.textViewport = textAreaRect;
+            CalibrationView_.focalLengthInput.textComponent = inputText;
+            CalibrationView_.focalLengthInput.placeholder = placeholderText;
+            CalibrationView_.focalLengthInput.characterValidation = TMP_InputField.CharacterValidation.Decimal;
+            CalibrationView_.focalLengthInput.text = initFocalLength.ToString("F1");
+
+            CalibrationView_.focalLengthInput.onEndEdit.AddListener((value) =>
+            {
+                if (float.TryParse(value, out float result))
+                {
+                    result = Mathf.Clamp(result, 5f, 100f);
+                    if (currentCamera_ != null)
+                        currentCamera_.focalLength = result;
+                    CalibrationView_.focalLengthSlider.value = result;
+                    CalibrationView_.focalLengthInput.text = result.ToString("F1");
+                }
+            });
+
+            // --- Slider GameObject ---
+            GameObject sliderObj = new("FocalLengthSlider");
+            sliderObj.layer = 5;
+            RectTransform sliderRect = sliderObj.AddComponent<RectTransform>();
+            sliderRect.SetParent(calibRoot, false);
+            sliderRect.anchorMin = new Vector2(1, 0.15f);
+            sliderRect.anchorMax = new Vector2(1, 0.85f);
+            sliderRect.pivot = new Vector2(0.5f, 0.5f);
+            sliderRect.anchoredPosition = new Vector2(-25, 0);
+            sliderRect.sizeDelta = new Vector2(20, 0);
+
+            CalibrationView_.focalLengthSlider = sliderObj.AddComponent<Slider>();
+            CalibrationView_.focalLengthSlider.direction = Slider.Direction.BottomToTop;
+            CalibrationView_.focalLengthSlider.minValue = 5f;
+            CalibrationView_.focalLengthSlider.maxValue = 100f;
+            CalibrationView_.focalLengthSlider.value = currentCamera_ != null ? currentCamera_.focalLength : 18f;
+
+            // --- Background ---
+            GameObject bgObj = new("Background");
+            bgObj.layer = 5;
+            RectTransform bgRect = bgObj.AddComponent<RectTransform>();
+            bgRect.SetParent(sliderRect, false);
+            bgRect.anchorMin = Vector2.zero;
+            bgRect.anchorMax = Vector2.one;
+            bgRect.sizeDelta = Vector2.zero;
+            Image bgImage = bgObj.AddComponent<Image>();
+            bgImage.color = new Color(0.2f, 0.2f, 0.2f, 0.5f);
+            bgImage.sprite = Sprite.Create(Texture2D.whiteTexture, new UnityEngine.Rect(0, 0, 4, 4), Vector2.zero);
+
+            // --- Fill Area ---
+            GameObject fillAreaObj = new("Fill Area");
+            fillAreaObj.layer = 5;
+            RectTransform fillAreaRect = fillAreaObj.AddComponent<RectTransform>();
+            fillAreaRect.SetParent(sliderRect, false);
+            fillAreaRect.anchorMin = Vector2.zero;
+            fillAreaRect.anchorMax = Vector2.one;
+            fillAreaRect.sizeDelta = Vector2.zero;
+
+            // --- Fill ---
+            GameObject fillObj = new("Fill");
+            fillObj.layer = 5;
+            RectTransform fillRect = fillObj.AddComponent<RectTransform>();
+            fillRect.SetParent(fillAreaRect, false);
+            fillRect.anchorMin = Vector2.zero;
+            fillRect.anchorMax = Vector2.one;
+            fillRect.sizeDelta = Vector2.zero;
+            Image fillImage = fillObj.AddComponent<Image>();
+            fillImage.color = new Color(0.3f, 0.6f, 1f, 1f);
+
+            // --- Handle Slide Area ---
+            GameObject handleAreaObj = new("Handle Slide Area");
+            handleAreaObj.layer = 5;
+            RectTransform handleAreaRect = handleAreaObj.AddComponent<RectTransform>();
+            handleAreaRect.SetParent(sliderRect, false);
+            handleAreaRect.anchorMin = Vector2.zero;
+            handleAreaRect.anchorMax = Vector2.one;
+            handleAreaRect.sizeDelta = Vector2.zero;
+
+            // --- Handle ---
+            GameObject handleObj = new("Handle");
+            handleObj.layer = 5;
+            RectTransform handleRect = handleObj.AddComponent<RectTransform>();
+            handleRect.SetParent(handleAreaRect, false);
+            handleRect.anchorMin = Vector2.zero;
+            handleRect.anchorMax = Vector2.zero;
+            handleRect.sizeDelta = new Vector2(20, 20);
+            Image handleImage = handleObj.AddComponent<Image>();
+            handleImage.color = new Color(0.8f, 0.8f, 0.8f, 1f);
+
+            CalibrationView_.focalLengthSlider.targetGraphic = handleImage;
+            CalibrationView_.focalLengthSlider.fillRect = fillRect;
+            CalibrationView_.focalLengthSlider.handleRect = handleRect;
+
+            CalibrationView_.focalLengthSlider.onValueChanged.AddListener((value) =>
+            {
+                if (currentCamera_ != null)
+                    currentCamera_.focalLength = value;
+                CalibrationView_.focalLengthInput.text = value.ToString("F1");
+            });
+        }
+
         public void setCameraViewEnabled(bool enable)
         {
             CalibrationView_.CameraView.gameObject.SetActive(enable);
@@ -196,7 +386,13 @@ namespace radar.ui.panel
 
             currentCamera_.transform.Translate(moveDirection * moveSpeed_ * speedScale_, Space.Self);
             currentCamera_.transform.Rotate(rotateDirection * rotateSpeed_ * speedScale_, Space.Self);
-            currentCamera_.fieldOfView += (isKeyPressed(KeyCode.Q) - isKeyPressed(KeyCode.E)) * 0.1f * speedScale_;
+            currentCamera_.focalLength += (isKeyPressed(KeyCode.Q) - isKeyPressed(KeyCode.E)) * 0.1f * speedScale_;
+            currentCamera_.focalLength = Mathf.Clamp(currentCamera_.focalLength, 5f, 100f);
+            if (CalibrationView_.focalLengthSlider != null && (isKeyPressed(KeyCode.Q) != 0 || isKeyPressed(KeyCode.E) != 0))
+            {
+                CalibrationView_.focalLengthSlider.value = currentCamera_.focalLength;
+                CalibrationView_.focalLengthInput.text = currentCamera_.focalLength.ToString("F1");
+            }
         }
 
         private void SolveCameraPose()

@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using radar.detector;
 using radar.data;
 using System.Collections.Generic;
+using System.Text;
 using radar.webcamera;
 
 namespace radar.ui.panel
@@ -162,18 +163,32 @@ namespace radar.ui.panel
     {
         public Transform TerminalBarRoot;
         public TextMeshProUGUI TerminalText;
+        private readonly Queue<string> terminalLines_ = new();
+        private const int MaxTerminalLines = 12;
         public TerminalBarType(Transform terminalBarRoot)
         {
             TerminalBarRoot = terminalBarRoot;
             TerminalText = terminalBarRoot.Find("Background/Info").GetComponent<TextMeshProUGUI>();
 
-            // Using ui to display log will consume too many compute resources
-            // LogManager.Instance.onLogUpdated_ += SetTerminalContent;
+            LogManager.Instance.onLogUpdated_ += AppendTerminalContent;
 
         }
         public void SetTerminalContent(string text)
         {
-            TerminalText.text = text;
+            AppendTerminalContent(text);
+        }
+
+        public void AppendTerminalContent(string text)
+        {
+            if (string.IsNullOrWhiteSpace(text))
+                return;
+
+            string normalizedText = text.TrimEnd();
+            terminalLines_.Enqueue(normalizedText);
+            while (terminalLines_.Count > MaxTerminalLines)
+                terminalLines_.Dequeue();
+
+            TerminalText.text = string.Join("\n", terminalLines_);
         }
 
     }
@@ -505,6 +520,8 @@ namespace radar.ui.panel
         public void OnDestroy()
         {
             if (!this.gameObject.scene.isLoaded) return;
+            if (InfoBarView != null && InfoBarView.TerminalBar != null)
+                LogManager.Instance.onLogUpdated_ -= InfoBarView.TerminalBar.AppendTerminalContent;
             if (DataManager.Instance != null)
                 DataManager.Instance.OnDataUpdated -= UpdateRobotPosition;
             if (robotList_ != null)

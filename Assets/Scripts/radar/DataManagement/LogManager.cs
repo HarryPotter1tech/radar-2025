@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.Concurrent;
 using UnityEngine;
 
 namespace radar.data
@@ -34,8 +35,8 @@ namespace radar.data
             }
         }
         private static LogManager instance_;
-        private Queue<Log> logQueue_ = new();
-        // public event Action<string> onLogUpdated_;
+        private ConcurrentQueue<Log> logQueue_ = new();
+        public event Action<string> onLogUpdated_;
         public string logFileDir = "/Logs/";
         private string basePath_;
         string mainLogFilePath;
@@ -66,9 +67,8 @@ namespace radar.data
         private void outputToFile()
         {
 
-            while (logQueue_.Count > 0)
+            while (logQueue_.TryDequeue(out Log log))
             {
-                Log log = logQueue_.Dequeue();
                 string logMessage = "[" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff") + "]<" + log.logLevel_.ToString() + "> " + log.logContent_ + "\n";
 
                 // log content is like: "[DataManager]Send data: {Hero: (1400, 750), E.....",split by []
@@ -85,7 +85,7 @@ namespace radar.data
                 System.IO.File.AppendAllText(moduleLogFilePath, logMessage);
                 System.IO.File.AppendAllText(mainLogFilePath, logMessage);
 
-                // onLogUpdated_(logMessage);
+                onLogUpdated_?.Invoke(logMessage);
             }
 
         }

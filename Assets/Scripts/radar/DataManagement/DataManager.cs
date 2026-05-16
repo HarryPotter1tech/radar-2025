@@ -339,18 +339,40 @@ namespace radar.data
                 FileName = resolvedExecutable,
                 Arguments = args,
                 UseShellExecute = false,
-                CreateNoWindow = true
+                CreateNoWindow = true,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true
             };
+            startInfo.EnvironmentVariables["PYTHONUNBUFFERED"] = "1";
 
             try
             {
                 pythonProcess_ = Process.Start(startInfo);
+                if (pythonProcess_ != null)
+                {
+                    pythonProcess_.OutputDataReceived += OnPythonOutputDataReceived;
+                    pythonProcess_.ErrorDataReceived += OnPythonErrorDataReceived;
+                    pythonProcess_.BeginOutputReadLine();
+                    pythonProcess_.BeginErrorReadLine();
+                }
                 LogManager.Instance.log($"[Python]Started: {resolvedExecutable} {args}");
             }
             catch (Exception ex)
             {
                 LogManager.Instance.warning($"[Python]Start failed: {ex.Message}");
             }
+        }
+
+        private void OnPythonOutputDataReceived(object sender, DataReceivedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(e.Data)) return;
+            LogManager.Instance.log("[Python]" + e.Data);
+        }
+
+        private void OnPythonErrorDataReceived(object sender, DataReceivedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(e.Data)) return;
+            LogManager.Instance.warning("[Python]" + e.Data);
         }
 
         private void StopPythonProcess()
@@ -360,6 +382,20 @@ namespace radar.data
             {
                 if (!pythonProcess_.HasExited)
                 {
+                    try
+                    {
+                        pythonProcess_.CancelOutputRead();
+                    }
+                    catch
+                    {
+                    }
+                    try
+                    {
+                        pythonProcess_.CancelErrorRead();
+                    }
+                    catch
+                    {
+                    }
                     pythonProcess_.Kill();
                     pythonProcess_.WaitForExit(1000);
                 }
@@ -370,6 +406,9 @@ namespace radar.data
             }
             finally
             {
+                pythonProcess_.OutputDataReceived -= OnPythonOutputDataReceived;
+                pythonProcess_.ErrorDataReceived -= OnPythonErrorDataReceived;
+                pythonProcess_.Dispose();
                 pythonProcess_ = null;
             }
         }
