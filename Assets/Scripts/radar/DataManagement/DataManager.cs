@@ -47,7 +47,10 @@ namespace radar.data
         private StateDatas stateData_ = new();
         public ref StateDatas stateData => ref stateData_;    // Read-only property to access the state data
 
-        public float sendFrequencyHz = 10f;
+        public float sendFrequencyHz = 5f;
+        // Rate limiting for specific serial commands to respect judge protocol limits
+        private float lastSent0305Time = 0f; // timestamp of last 0x0305 send
+        private readonly float minInterval0305 = 1f / 5f; // 0x0305 max 5Hz
         private bool isDataUpdated_ = false;
         private int doubleDebuffActivedTimes = 0;
         private ushort lastRadarMarkProgress_ = ushort.MaxValue;
@@ -227,7 +230,7 @@ namespace radar.data
             {
                 dataCmdId = 0x0200,
                 senderId = (ushort)(Instance.stateData.gameState.EnemySide == Team.Blue ? 9 : 109),
-                receiverId =(ushort)(Instance.stateData.gameState.EnemySide == Team.Blue ? 107 : 7),
+                receiverId = (ushort)(Instance.stateData.gameState.EnemySide == Team.Blue ? 107 : 7),
                 data = signalData
             };
             byte[] dataToSend = new byte[Marshal.SizeOf(typeof(RobotInteraction_MultiRobot))];
@@ -656,7 +659,7 @@ namespace radar.data
             const int SignalInfoBytes = 34;
             const int FrameBytes = 2 + SignalInfoBytes;
             int index = 0;
-           
+
             while (cache.Count - index >= 2)
             {
                 if (cache[index] == 0x0A && cache[index + 1] == 0x07)
@@ -715,6 +718,8 @@ namespace radar.data
         private void SendRobotPositionData()
         {
             if (!SerialHandler.Instance.isConnected) return;
+            // Enforce 0x0305 rate limit (max 5Hz) to comply with judge protocol
+            if (Time.time - lastSent0305Time < minInterval0305) return;
 
             Vector2 ToRobotCoordinate(Vector3 position)
             {
@@ -774,6 +779,7 @@ namespace radar.data
             Marshal.FreeHGlobal(ptr);
 
             SerialHandler.Instance.SendData(0x0305, dataToSend);
+            lastSent0305Time = Time.time;
 
             LogManager.Instance.log("[DataManager]Send data: {" +
                 $"OpponentHero: ({mapDataToSend.OpponentHeroPositionX}, {mapDataToSend.OpponentHeroPositionY}), " +
